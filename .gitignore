@@ -1,0 +1,26 @@
+## Node.js modules
+node_modules/
+
+## Build artifacts
+*.vsix
+
+## Internal / Local
+.archive/
+.internal/
+.spec/
+.spec/colors*
+.spec/palette*
+
+## Internal Cargo project
+/target
+Cargo.toml
+Cargo.lock
+src/**/*.rs
+palette/
+tools/
+
+justfile
+
+## IDE
+.vscode/
+.idea/

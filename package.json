@@ -1,0 +1,29 @@
+{
+  "name": "recoil-codium-theme",
+  "version": "0.1.3",
+  "displayName": "Recoil",
+  "description": "Dark theme with first-class support for Rust projects",
+  "publisher": "ellacrity",
+  "categories": [
+    "Themes"
+  ],
+  "repository": {
+    "url": "https://github.com/ellacrity/recoil-codium-theme"
+  },
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "scripts": {
+    "publish": "npx vsce publish --pat $VSCE_PAT",
+    "build": "npx vsce package"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Recoil",
+        "uiTheme": "vs-dark",
+        "path": "/themes/Recoil-color-theme.json"
+      }
+    ]
+  }
+}
