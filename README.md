@@ -18,7 +18,7 @@ reason.
 
 ## Contributing
 
-Please visit the project [GitHub page][project-repo], open a new ticket that outlines the scope of
+Please visit the project [Gitlab repository][project-repo], open a new ticket that outlines the scope of
 your contribution(s) and be ready to discuss your changes. I will respond to you as quickly as possible.
 Once your changes are approved, you can open a pull request and I will merge your contribution.
 
@@ -35,5 +35,5 @@ Unless you explicitly state otherwise, any contribution intentionally submitted 
 
 <!-- Links section -->
 
-[project-repo]: https://github.com/ellacrity/recoil-vscodium-theme/
-[license]: https://github.com/ellacrity/recoil-vscodium-theme/blob/main/LICENSE
+[project-repo]: https://gitlab.com/ellacrity/recoil-theme
+[license]: https://gitlab.com/ellacrity/recoil-theme/-/blob/main/LICENSE

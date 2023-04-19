@@ -8,7 +8,7 @@
     "Themes"
   ],
   "repository": {
-    "url": "https://github.com/ellacrity/recoil-codium-theme"
+    "url": "https://gitlab.com/ellacrity/recoil-theme"
   },
   "engines": {
     "vscode": "^1.73.0"
