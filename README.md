@@ -1,5 +1,18 @@
 # Recoil
 
+This is a customized theme that I use when using VSCodium.
+
+## Description
+
+`recoil` is a dark theme 
+It works for VSCode as well.
+
+
+
+## VSCodium
+
+This 
+
 Recoil is a vibrant, dark theme with first-class support for **Rust** projects.
 
 This extension was created to be fully compatible with `VSCodium`.

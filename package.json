@@ -1,9 +1,17 @@
 {
-  "name": "recoil-codium-theme",
-  "version": "0.1.3",
+  "name": "vscodium-themes-recoil",
+  "version": "0.1.4",
   "displayName": "Recoil",
-  "description": "Dark theme with first-class support for Rust projects",
+  "description": "Custom theme to suit my daily workflow.",
   "publisher": "ellacrity",
+  "keywords": [
+    "rust",
+    "theme",
+    "vscodium",
+    "vscode",
+    "dark",
+    "accessible"
+  ],
   "categories": [
     "Themes"
   ],
