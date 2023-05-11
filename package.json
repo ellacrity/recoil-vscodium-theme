@@ -16,7 +16,7 @@
     "Themes"
   ],
   "repository": {
-    "url": "https://gitlab.com/ellacrity/recoil-theme"
+    "url": "https://gitlab.com/ellacrity/recoil-vscodium-theme"
   },
   "engines": {
     "vscode": "^1.73.0"
