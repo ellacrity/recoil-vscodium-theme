@@ -1,6 +1,6 @@
 {
   "name": "vscodium-themes-recoil",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "displayName": "Recoil",
   "description": "Custom theme to suit my daily workflow.",
   "publisher": "ellacrity",
@@ -16,7 +16,7 @@
     "Themes"
   ],
   "repository": {
-    "url": "https://gitlab.com/ellacrity/recoil-vscodium-theme"
+    "url": "https://github.com/ellacrity/recoil-vscodium-theme"
   },
   "engines": {
     "vscode": "^1.73.0"

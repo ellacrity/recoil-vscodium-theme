@@ -785,7 +785,8 @@
         "invalid.deprecated.line-too-long.git-commit"
       ],
       "settings": {
-        "foreground": "#FBA94B"
+        "foreground": "#FBA94B",
+        "fontStyle": ""
       }
     },
     {
@@ -835,7 +836,8 @@
         "constant.numeric.decimal"
       ],
       "settings": {
-        "foreground": "#A3C95D"
+        "foreground": "#A3C95D",
+        "fontStyle": ""
       }
     },
     {
@@ -1006,11 +1008,7 @@
         "comment.line.double-slash",
         "comment.line.double-slash.rust",
         "punctuation.definition.comment",
-        "comment.line.double-slash.js",
-        "meta.structure.array.json.comments",
-        "meta.structure.dictionary.value.json.comments",
-        "meta.structure.dictionary.json.comments",
-        "source.json.comments"
+        "comment.line.double-slash.js"
       ],
       "settings": {
         "foreground": "#8F99A3",
@@ -1040,10 +1038,15 @@
         "punctuation.definition.decorator",
         "storage.modifier.attribute",
         "storage.type.annotation",
-        "magit.entity"
+        "magit.entity",
+        "meta.structure.array.json.comments",
+        "meta.structure.dictionary.value.json.comments",
+        "meta.structure.dictionary.json.comments",
+        "source.json.comments"
       ],
       "settings": {
-        "foreground": "#8F99A3"
+        "foreground": "#8F99A3",
+        "fontStyle": ""
       }
     },
     {
@@ -1054,14 +1057,14 @@
         "fontStyle": "bold"
       }
     },
-    {
-      "name": "Bright White (Italic)",
-      "scope": [],
-      "settings": {
-        "foreground": "#ECEDEE",
-        "fontStyle": "italic"
-      }
-    },
+    // {
+    //   "name": "Bright White (Italic)",
+    //   "scope": [],
+    //   "settings": {
+    //     "foreground": "#ECEDEE",
+    //     "fontStyle": "italic"
+    //   }
+    // },
     {
       "name": "Unsafe (Underline)",
       "scope": ["keyword.other.unsafe"],
@@ -1120,7 +1123,8 @@
       "scope": [
         "variable.other.rust",
         "meta.method.declaration.ts",
-        "meta.class.ts"
+        "meta.class.ts",
+        "support.type.property-name.json.comments"
       ],
       "settings": {
         "fontStyle": ""
@@ -1228,7 +1232,8 @@
     //   "foreground": "#E0B4FE"
     // },
     "string": {
-      "foreground": "#A3C95D"
+      "foreground": "#A3C95D",
+      "italic": false
     },
     "string.injected": {
       "foreground": "#A3C95D"
