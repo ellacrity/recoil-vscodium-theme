@@ -702,6 +702,10 @@
     {
       "name": "Yellow (Normal)",
       "scope": [
+        "keyword.other.rust",
+        "storage.type.rust",
+        "keyword.other.fn.rust",
+        "storage.modifier.mut.rust",
         "storage.modifier.ts",
         "meta.class.ts",
         "variable.other.readwrite.ts",
@@ -797,6 +801,7 @@
       }
     },
     {
+      "name": "Dark White (Normal)",
       "scope": [
         "entity.name.function.macro",
         "entity.name.macro",
@@ -826,7 +831,8 @@
         "constant.character",
         "punctuation.definition.char",
         "punctuation.definition.string",
-        "string"
+        "string",
+        "constant.numeric.decimal"
       ],
       "settings": {
         "foreground": "#A3C95D"
@@ -868,8 +874,7 @@
         "meta.attribute.rust",
         "entity.name.type.primitive.rust",
         "punctuation.definition.attribute.rust",
-        "support.type.primitive",
-        "entity.name.type.numeric.rust"
+        "support.type.primitive"
       ],
       "settings": {
         "foreground": "#FEB4D8",
@@ -903,6 +908,7 @@
         "constant.character.escape",
         "constant.character.format.placeholder",
         "constant.other.placeholder",
+        "meta.interpolation.rust",
         "punctuation.section.embedded",
         "punctuation.definition.template-expression"
       ],
@@ -959,6 +965,7 @@
         "storage.type.uintptr.go",
         "support.type",
         "keyword.other.unit",
+        "entity.name.type.numeric",
         "variable.other.metavariable.specifier",
         "constant.language.json.comments"
       ],
@@ -971,7 +978,6 @@
       "scope": [
         "magit.header",
         "constant.language.bool",
-        "constant.numeric.decimal",
         "string.other.link.title.markdown",
         "string.other.link.description.markdown",
         "string.unquoted.asciidoc"
@@ -995,6 +1001,10 @@
       "name": "Black (Normal Italic)",
       "scope": [
         "comment",
+        "comment.block",
+        "comment.line",
+        "comment.line.double-slash",
+        "comment.line.double-slash.rust",
         "punctuation.definition.comment",
         "comment.line.double-slash.js",
         "meta.structure.array.json.comments",
@@ -1022,8 +1032,6 @@
     {
       "name": "Black (Normal)",
       "scope": [
-        "comment.line",
-        "comment.line.double-slash",
         "keyword.operator.namespace.rust",
         "entity.name.function.decorator",
         "punctuation.brackets.attribute",
@@ -1074,14 +1082,13 @@
       "scope": [
         "keyword.control.flow.block-scalar.literal.yaml",
         "keyword.operator",
-        "storage.modifier.mut.rust",
         "meta.function.definition.rust",
         "punctuation",
         "punctuation.semi.rust",
         "keyword.operator.dereference.rust",
         "punctuation.separator.dictionary.pair.json.comments",
         "variable.language.this.ts",
-        "meta.EMbedded.line.ts",
+        "meta.embedded.line.ts",
         "meta.template.expression.ts",
         "meta.block.ts",
         "meta.method.declaration.ts",
