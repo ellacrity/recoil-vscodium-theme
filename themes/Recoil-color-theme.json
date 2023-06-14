@@ -832,12 +832,23 @@
         "constant.character",
         "punctuation.definition.char",
         "punctuation.definition.string",
-        "string",
-        "constant.numeric.decimal"
+        "string"
       ],
       "settings": {
         "foreground": "#A3C95D",
         "fontStyle": ""
+      }
+    },
+    {
+      "name": "Green (Bold)",
+      "scope": [
+        "constant.numeric.decimal",
+        "constant.numeric.hex",
+        "constant.numeric.octal"
+      ],
+      "settings": {
+        "foreground": "#A3C95D",
+        "fontStyle": "bold"
       }
     },
     {
