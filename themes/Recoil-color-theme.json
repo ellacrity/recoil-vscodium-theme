@@ -1228,8 +1228,7 @@
       "foreground": "#E0B4FE"
     },
     "derive": {
-      "foreground": "#FEB4D8",
-      "fontStyle": "bold"
+      "foreground": "#FEB4D8"
     },
     "deriveHelper": {
       "foreground": "#E0B4FE"
