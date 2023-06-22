@@ -657,7 +657,8 @@
         "keyword.control.trycatch.ts",
         "meta.block.ts",
         "meta.method.declaration.ts",
-        "meta.class.ts"
+        "meta.class.ts",
+        "keyword.operator.macro.dollar"
       ],
       "settings": {
         "foreground": "#FBE39D",
@@ -692,7 +693,9 @@
         "keyword.operator.math.rust",
         "keyword.operator.namespace.rust",
         "meta.macro.metavariable.rust",
-        "meta.macro.rust"
+        "meta.macro.rust",
+        "entity.name.type.result",
+        "keyword.operator.subpattern"
       ],
       "settings": {
         "foreground": "#3BF7B8",
@@ -722,6 +725,22 @@
       "settings": {
         "foreground": "#FBE39D",
         "fontStyle": ""
+      }
+    },
+    {
+      "name": "Bright Cyan (Reset)",
+      "scope": [
+        "constant.numeric.json.comments",
+        "constant.numeric.decimal",
+        "constant.numeric.hex",
+        "constant.numeric.integer",
+        "constant.numeric.octal",
+        "constant.numeric.integer.hexadecimal",
+        "meta.attribute.rust"
+      ],
+      "settings": {
+        "foreground": "#9CF9FC",
+        "fontStyle": "bold"
       }
     },
     {
@@ -897,6 +916,14 @@
       }
     },
     {
+      "name": "Pink (Bold)",
+      "scope": ["support.type.register", "keyword.operator.question"],
+      "settings": {
+        "foreground": "#FEB4D8",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Bright Pink (Bold)",
       "scope": [],
       "settings": {
@@ -989,6 +1016,26 @@
       }
     },
     {
+      "name": "Bright Purple (Reset)",
+      "scope": [
+        "entity.name.function.macro",
+        "variable.other.metavariable.specifier",
+        "entity.name.type.numeric"
+      ],
+      "settings": {
+        "foreground": "#E0B4FE",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Purple (Italic Bold)",
+      "scope": ["constant.language.json", "constant.language.boolean"],
+      "settings": {
+        "foreground": "#E0B4FE",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
       "name": "Bright Purple (Bold)",
       "scope": [
         "magit.header",
@@ -1063,21 +1110,29 @@
       }
     },
     {
+      "name": "Black (Bold)",
+      "scope": [
+        "keyword.operator.namespace",
+        "keyword.operator.namespace.rust",
+        "keyword.operator.namespace"
+      ],
+      "settings": {
+        "foreground": "#8F99A3",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Bright White (Bold)",
-      "scope": ["meta.diff.header.to-file", "meta.diff.header.from-file"],
+      "scope": [
+        "meta.diff.header.to-file",
+        "meta.diff.header.from-file",
+        "variable.other.metavariable.name"
+      ],
       "settings": {
         "foreground": "#ECEDEE",
         "fontStyle": "bold"
       }
     },
-    // {
-    //   "name": "Bright White (Italic)",
-    //   "scope": [],
-    //   "settings": {
-    //     "foreground": "#ECEDEE",
-    //     "fontStyle": "italic"
-    //   }
-    // },
     {
       "name": "Unsafe (Underline)",
       "scope": ["keyword.other.unsafe"],
@@ -1132,33 +1187,40 @@
       }
     },
     {
-      "name": "Style (Reset)",
+      "name": "Foreground (Reset)",
       "scope": [
         "variable.other.rust",
         "meta.method.declaration.ts",
         "meta.class.ts",
-        "support.type.property-name.json.comments"
+        "support.type.property-name.json.comments",
+        "comment.line.documentation",
+        "punctuation.section.block",
+        "punctuation.definition.dictionary",
+        "variable.other.metavariable.name",
+        "keyword.operator",
+        "operator.keyword",
+        "punctuation.brackets.round"
       ],
       "settings": {
         "fontStyle": ""
       }
     },
     {
-      "name": "Style (Italic)",
+      "name": "Foreground (Italic)",
       "scope": ["markup.italic"],
       "settings": {
         "fontStyle": "italic"
       }
     },
     {
-      "name": "Style (Bold)",
+      "name": "Foreground (Bold)",
       "scope": ["markup.bold", "markup.heading", "magit.subheader"],
       "settings": {
         "fontStyle": "bold"
       }
     },
     {
-      "name": "Style (Underline)",
+      "name": "Foreground (Underline)",
       "scope": ["meta.mutable"],
       "settings": {
         "fontStyle": "underline"
@@ -1170,15 +1232,22 @@
   Coloring for semantic tokens
   */
   "semanticTokenColors": {
-    // START
-
+    "number.attribute": {
+      "foreground": "#9CF9FC",
+      "fontStyle": ""
+    },
+    "number.injected": {
+      "foreground": "#9CF9FC",
+      "fontStyle": ""
+    },
+    "operator.keyword": "#8F99A3",
     "parameter.callable": {
-      "foreground": "#99F0F8"
+      "foreground": "#C69EFA"
     },
-    // END
     "variable.callable": {
-      "foreground": "#99F0F8"
+      "foreground": "#C69EFA"
     },
+    "*.callable": "#C69EFA",
     "generic.attribute": {
       "foreground": "#ECEDEE"
     },
@@ -1576,6 +1645,7 @@
       "foreground": "#E0B4FE"
     },
     "operator": {
+      "foreground": "#8F99A3",
       "bold": true
     },
     "operator.controlFlow": {

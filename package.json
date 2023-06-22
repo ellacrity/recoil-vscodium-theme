@@ -1,16 +1,19 @@
 {
   "name": "vscodium-themes-recoil",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "displayName": "Recoil",
-  "description": "Custom theme to suit my daily workflow.",
+  "description": "Custom high-contrast theme to suit my daily workflow.",
   "publisher": "ellacrity",
   "keywords": [
     "rust",
+    "toml",
+    "json",
     "theme",
     "vscodium",
     "vscode",
     "dark",
-    "accessible"
+    "wcag",
+    "accessibility"
   ],
   "categories": [
     "Themes"
