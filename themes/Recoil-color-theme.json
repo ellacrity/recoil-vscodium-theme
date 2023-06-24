@@ -566,7 +566,7 @@
     "symbolIcon.classForeground": "#68C6FD",
     "symbolIcon.constantForeground": "#ABF282",
     "symbolIcon.enumeratorForeground": "#3BF7B8",
-    "symbolIcon.enumeratorMemberForeground": "#99F6E4",
+    "symbolIcon.enumeratorMemberForeground": "#90FEC3",
     "symbolIcon.fieldForeground": "#FBA94B",
     "symbolIcon.functionForeground": "#60E2F2",
     "symbolIcon.interfaceForeground": "#FEB4D8",
@@ -727,7 +727,7 @@
       }
     },
     {
-      "name": "Bright Cyan (Reset)",
+      "name": "Cyan (Reset)",
       "scope": [
         "constant.numeric.json.comments",
         "constant.numeric.decimal",
@@ -735,6 +735,9 @@
         "constant.numeric.integer",
         "constant.numeric.octal",
         "constant.numeric.integer.hexadecimal",
+        "constant.numeric.hex",
+        "constant.numeric.binary",
+        "keyword.operator.attribute.inner",
         "meta.attribute.rust"
       ],
       "settings": {
@@ -800,7 +803,9 @@
         "variable.other.object.property",
         "variable.other.object.property.ts",
         "variable.other.property",
-        "invalid.deprecated.line-too-long.git-commit"
+        "invalid.deprecated.line-too-long.git-commit",
+        "punctuation.definition.interpolation",
+        "punctuation.section.embedded"
       ],
       "settings": {
         "foreground": "#FBA94B",
@@ -831,6 +836,8 @@
         "variable.other.metavariable",
         "support.constant",
         "variable",
+        "punctuation.brackets.round",
+        "punctuation.brackets.angle",
         "keyword.operator.dereference.rust"
       ],
       "settings": {
@@ -857,22 +864,9 @@
         "fontStyle": ""
       }
     },
-    // {
-    // "name": "Green (Bold)",
-    // "scope": [],
-    // "settings": {
-    // "foreground": "#ABF282",
-    // "fontStyle": "bold"
-    // }
-    // },
     {
       "name": "Bright Green (Normal)",
-      "scope": [
-        "constant.other.caps.rust",
-        "constant.numeric.hex",
-        "constant.numeric.octal",
-        "constant.numeric.decimal"
-      ],
+      "scope": ["constant.other.caps.rust"],
       "settings": {
         "foreground": "#ABF282"
       }
@@ -903,7 +897,7 @@
         "constant.language.undefined.ts",
         "constant.language.null.ts",
         "entity.name.type",
-        "entity.name.type.numeric",
+        // "entity.name.type.numeric",
         "meta.attribute.rust",
         "entity.name.type.primitive.rust",
         "punctuation.definition.attribute.rust",
@@ -950,7 +944,6 @@
         "constant.character.format.placeholder",
         "constant.other.placeholder",
         "meta.interpolation.rust",
-        "punctuation.section.embedded",
         "punctuation.definition.template-expression"
       ],
       "settings": {
@@ -1006,7 +999,6 @@
         "storage.type.uintptr.go",
         "support.type",
         "keyword.other.unit",
-        "entity.name.type.numeric",
         "variable.other.metavariable.specifier",
         "constant.language.json.comments"
       ],
@@ -1027,21 +1019,18 @@
       }
     },
     {
-      "name": "Purple (Italic Bold)",
-      "scope": ["constant.language.json", "constant.language.boolean"],
-      "settings": {
-        "foreground": "#E0B4FE",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
       "name": "Bright Purple (Bold)",
       "scope": [
         "magit.header",
         "constant.language.bool",
         "string.other.link.title.markdown",
         "string.other.link.description.markdown",
-        "string.unquoted.asciidoc"
+        "string.unquoted.asciidoc",
+        "constant.language.json",
+        "constant.language.boolean.yaml",
+        "constant.language.boolean",
+        "constant.language.json",
+        "constant.language.boolean"
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1056,6 +1045,14 @@
       ],
       "settings": {
         "foreground": "#C69EFA"
+      }
+    },
+    {
+      "name": "Purple (Bold)",
+      "scope": ["punctuation.definition.attribute"],
+      "settings": {
+        "foreground": "#C69EFA",
+        "fontStyle": "bold"
       }
     },
     {
@@ -1196,13 +1193,32 @@
         "punctuation.definition.dictionary",
         "variable.other.metavariable.name",
         "keyword.operator",
-        "operator.keyword",
-        "punctuation.brackets.round"
+        "operator.keyword"
       ],
       "settings": {
         "fontStyle": ""
       }
     },
+    // {
+    //   "name": "Dark White (Reset)",
+    //   "scope": [
+    //     "variable.other.rust",
+    //     "meta.method.declaration.ts",
+    //     "meta.class.ts",
+    //     "support.type.property-name.json.comments",
+    //     "comment.line.documentation",
+    //     "punctuation.section.block",
+    //     "punctuation.definition.dictionary",
+    //     "variable.other.metavariable.name",
+    //     "keyword.operator",
+    //     "operator.keyword",
+
+    //   ],
+    //   "settings": {
+    //     "foreground": "#C2C7CC",
+    //     "fontStyle": ""
+    //   }
+    // },
     {
       "name": "Foreground (Italic)",
       "scope": ["markup.italic"],
@@ -1239,14 +1255,23 @@
       "fontStyle": ""
     },
     "operator.keyword": "#8F99A3",
+    "parameter.consuming": {
+      "foreground": "#C69EFA",
+      "bold": true
+    },
     "parameter.callable": {
-      "foreground": "#C69EFA"
+      "foreground": "#C69EFA",
+      "bold": true
     },
     "variable.callable": {
       "foreground": "#C69EFA"
     },
     "generic.attribute": {
-      "foreground": "#DADEE2"
+      "foreground": "#DADEE2",
+      "bold": false
+    },
+    "generic.macro": {
+      "foreground": "#BFE0FC"
     },
     "generic.injected": {
       "foreground": "#C2C7CC"
@@ -1265,11 +1290,11 @@
     },
     "keyword.injected": {
       "foreground": "#FBE39D",
-      "fontStyle": "bold"
+      "bold": true
     },
     "keyword.unsafe": {
       "foreground": "#FD7C68",
-      "fontStyle": "underline"
+      "underline": true
     },
     "keyword.unsafe.injected": {
       "foreground": "#FD7C68",
@@ -1284,15 +1309,13 @@
     "boolean.injected": {
       "foreground": "#E0B4FE"
     },
-    "attributeBracket": {
-      "foreground": "#C2C7CC",
-      "fontStyle": ""
-    },
     "decorator": {
-      "foreground": "#E0B4FE"
+      "foreground": "#E0B4FE",
+      "bold": false
     },
     "decorator.attribute": {
-      "foreground": "#E0B4FE"
+      "foreground": "#E0B4FE",
+      "bold": false
     },
     "derive": {
       "foreground": "#FEB4D8"
@@ -1316,9 +1339,6 @@
       "italic": false
     },
     "parameter": {
-      "foreground": "#D8DDE4"
-    },
-    "parameter.consuming": {
       "foreground": "#D8DDE4"
     },
     "constParameter": {
@@ -1434,7 +1454,7 @@
     /* Self keyword and Type */
     "selfKeyword": {
       "foreground": "#ECEDEE",
-      "fontStyle": "bold"
+      "bold": true
     },
     "selfKeyword.declaration": {
       "foreground": "#ECEDEE",
@@ -1509,8 +1529,8 @@
     "variable.static.declaration.public": {
       "foreground": "#ABF282"
     },
-    /* Fallback type (appears to be used throughout entire VSCode) */
-
+    // ? TODO: Figure out a better way to handle the global fallback color that
+    // VSCodium uses for arbitrary types. "WebViews" do not respect these rules.
     "struct": {
       "foreground": "#68C6FD"
     },
@@ -1523,22 +1543,22 @@
       "bold": true
     },
     "struct.documentation": {
-      "foreground": "#68C6FD",
-      "fontStyle": ""
+      "foreground": "#68C6FD"
+      // "fontStyle": ""
     },
     "struct.injected": {
-      "foreground": "#68C6FD",
-      "fontStyle": ""
+      "foreground": "#68C6FD"
+      // "fontStyle": ""
     },
     "struct.intraDocLink": {
-      "foreground": "#68C6FD",
-      "fontStyle": ""
+      "foreground": "#68C6FD"
+      // "fontStyle": ""
     },
     "struct.public": {
       "foreground": "#68C6FD"
     },
     "struct.declaration": {
-      "fontStyle": "underline"
+      "underline": true
     },
     "struct.public.declaration": {
       "foreground": "#68C6FD",
@@ -1546,10 +1566,23 @@
     },
     /* unions (FFI / unsafe code) */
     "union": {
-      "foreground": "#EFA986"
+      "foreground": "#F39B68",
+      "bold": false
     },
     "union.injected": {
-      "foreground": "#EFA986"
+      "foreground": "#F39B68"
+    },
+    "union.public": {
+      "foreground": "#F39B68",
+      "bold": true
+    },
+    "union.declaration": {
+      "foreground": "#F39B68",
+      "underline": true
+    },
+    "union.declaration.public": {
+      "foreground": "#F39B68",
+      "underline": true
     },
     "union.defaultLibrary": {
       "bold": true
@@ -1611,15 +1644,15 @@
     },
     "macro": {
       "foreground": "#E0B4FE",
-      "fontStyle": "underline"
+      "underline": true
     },
     "macro.injected": {
       "foreground": "#E0B4FE",
-      "fontStyle": "underline"
+      "underline": true
     },
     "macro.unsafe": {
       "foreground": "#E0B4FE",
-      "fontStyle": "underline"
+      "underline": true
     },
     "lifetime": {
       "foreground": "#A3C95D",
@@ -1633,14 +1666,16 @@
       "foreground": "#22D3EE"
     },
     "formatSpecifier": {
-      "foreground": "#3BF7B8"
+      "foreground": "#FBA94B"
     },
     /* Attributes */
     "builtinAttribute": {
-      "foreground": "#E0B4FE"
+      "foreground": "#E0B4FE",
+      "bold": false
     },
     "builtinAttribute.injected": {
-      "foreground": "#E0B4FE"
+      "foreground": "#E0B4FE",
+      "bold": false
     },
     "operator": {
       "foreground": "#8F99A3",
@@ -1794,8 +1829,8 @@
       "foreground": "#FBA94B"
     },
     "property.public.declaration": {
-      "foreground": "#FBA94B",
-      "fontStyle": ""
+      "foreground": "#FBA94B"
+      // "fontStyle": ""
     },
     "escapeSequence.injected": {
       "foreground": "#FBA94B"
@@ -1804,8 +1839,8 @@
       "foreground": "#3BF7B8"
     },
     "comment.injected": {
-      "foreground": "#8F99A3",
-      "fontStyle": ""
+      "foreground": "#8F99A3"
+      // "fontStyle": ""
     },
     "comment.documentation": {
       "foreground": "#B3BDC7",
@@ -1837,23 +1872,27 @@
       "foreground": "#FFCA7A"
     },
     "*.declaration.mutable": {
-      "fontStyle": "underline"
+      "underline": true
     },
     "*.injected": {
       "fontStyle": ""
     },
     "*.mutable": {
-      "fontStyle": "underline"
+      "underline": true
     },
     "*.mutable.injected": {
-      "fontStyle": "underline"
+      "underline": true
     },
-    "*.callable": "#C69EFA",
+    "*.callable": {
+      "foreground": "#C69EFA",
+      "bold": true
+    },
     "*.public": {
       "bold": true
     },
     "*.declaration": {
-      "fontStyle": ""
+      "bold": false,
+      "italic": false
     },
     "*.declaration.public": {
       "bold": true
