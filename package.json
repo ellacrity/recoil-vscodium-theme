@@ -1,7 +1,7 @@
 {
   "name": "recoil",
-  "version": "0.3.6",
-  "displayName": "Recoil VSCodium Theme",
+  "version": "0.3.7",
+  "displayName": "Recoil - Theme",
   "description": "Custom high-contrast theme to suit my daily workflow.",
   "license": "MIT",
   "publisher": "ellacrity",
@@ -25,10 +25,8 @@
     "vscode": "^1.73.0"
   },
   "scripts": {
-    "publish": "npx vsce publish --pat $VSCE_PAT",
-    "build": "npx vsce package",
-    "pkg:version": "npm pkg get version",
-    "vscode:install": ""
+    "publish": "npm install && npx ovsx publish -p $OPEN_VSX_TOKEN",
+    "build": "npx vsce package"
   },
   "contributes": {
     "themes": [

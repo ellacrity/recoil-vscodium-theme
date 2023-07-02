@@ -18,8 +18,9 @@ To build this project from source:
 3. Run the `build` script using `npm run build`
 4. Install the VSIX (VSCodium extension)
    1. From your terminal console (see below).
-   2. Right-click on the generated __vsix__ file, then __Install Extension VSIX__
+   2. Right-click on the generated __vsix__ file, then __`Install Extension VSIX`__
    3. Run the following command within VSCodium: __`Extensions: Install from VSIX`__
+   
 ```shell
 git clone https://github.com/ellacrity/recoil-vscodium-theme
 cd recoil-vscodium-theme
