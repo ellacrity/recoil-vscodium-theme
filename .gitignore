@@ -3,6 +3,9 @@ node_modules/
 
 ## Build artifacts
 *.vsix
+/target
+Cargo.toml
+Cargo.lock
 
 ## Internal / Local
 .archive/
@@ -11,16 +14,17 @@ node_modules/
 .spec/colors*
 .spec/palette*
 
-## Internal Cargo project
-/target
-Cargo.toml
-Cargo.lock
+## Internal project files
 src/**/*.rs
 palette/
 tools/
-
 justfile
 
 ## IDE
 .vscode/
 .idea/
+
+## Plugins
+engine/
+scripts/
+parser/

@@ -1,16 +1,16 @@
 {
-  "name": "vscodium-themes-recoil",
-  "version": "0.3.2",
-  "displayName": "Recoil",
+  "name": "recoil",
+  "version": "0.3.6",
+  "displayName": "Recoil VSCodium Theme",
   "description": "Custom high-contrast theme to suit my daily workflow.",
+  "license": "MIT",
   "publisher": "ellacrity",
   "keywords": [
     "rust",
     "toml",
     "json",
     "theme",
-    "vscodium",
-    "vscode",
+    "codium",
     "dark",
     "wcag",
     "accessibility"
@@ -26,7 +26,9 @@
   },
   "scripts": {
     "publish": "npx vsce publish --pat $VSCE_PAT",
-    "build": "npx vsce package"
+    "build": "npx vsce package",
+    "pkg:version": "npm pkg get version",
+    "vscode:install": ""
   },
   "contributes": {
     "themes": [
