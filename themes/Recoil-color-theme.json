@@ -169,7 +169,7 @@
     "terminal.ansiBlue": "#60E2F2",
     "terminal.ansiCyan": "#3BF7B8",
     "terminal.ansiGreen": "#A3C95D",
-    "terminal.ansiMagenta": "#FEB4D8", 
+    "terminal.ansiMagenta": "#FEB4D8",
     "terminal.ansiRed": "#FD7C68",
     "terminal.ansiWhite": "#C2C7CC",
     "terminal.ansiYellow": "#FFCA7A",
@@ -199,7 +199,6 @@
     "banner.foreground": "#C2C7CC",
     "banner.iconForeground": "#68C6FD",
     //#breadcrumb
-    
     "breadcrumb.background": "#34415640",
     "breadcrumb.foreground": "#C2C7CC",
     "breadcrumb.activeSelectionForeground": "#DADEE2",
@@ -732,6 +731,11 @@
         "constant.numeric.bin",
         "constant.numeric.oct",
         "constant.numeric.binary",
+        "constant.numeric.json.comments",
+        "constant.numeric.decimal",
+        "constant.numeric.hex",
+        "constant.numeric.octal",
+        "constant.numeric.integer.hexadecimal",
         "number",
         "variable.other.rust",
         "keyword.operator.attribute.inner",
@@ -913,7 +917,7 @@
       "name": "Pink (Bold)",
       "scope": [
         "support.type.register",
-        "keyword.operator.question"
+        "keyword.operator.question",
       ],
       "settings": {
         "foreground": "#FEB4D8",
@@ -1017,7 +1021,7 @@
       "scope": [
         "entity.name.function.macro",
         "variable.other.metavariable.specifier",
-        "entity.name.type.numeric"
+        "entity.name.type.numeric",
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1118,7 +1122,6 @@
       "scope": [
         "keyword.operator.namespace",
         "keyword.operator.namespace.rust",
-        "keyword.operator.namespace"
       ],
       "settings": {
         "foreground": "#8F99A3",
@@ -1131,7 +1134,9 @@
         "meta.diff.header.to-file",
         "meta.diff.header.from-file",
         "variable.other.metavariable.name",
-        "meta.import.ts"
+        "meta.import.ts",
+        "variable.other.metavariable.name",
+        "keyword.operator.key-value",
       ],
       "settings": {
         "foreground": "#ECEDEE",
@@ -1169,7 +1174,6 @@
         "punctuation.separator.dictionary.pair.json.comments",
         "variable.language.this.ts",
         "meta.embedded.line.ts",
-
       ],
       "settings": {
         "foreground": "#DADEE2",
@@ -1206,31 +1210,16 @@
         "keyword.operator",
         "operator.keyword",
         "punctuation.definition.array.begin.json",
-        "punctuation.definition.array.end.json"
+        "punctuation.definition.array.end.json",
+        "punctuation.definition.dictionary",
+        "variable.other.metavariable.name",
+        "punctuation.brackets.round",
+        "punctuation.brackets.angle",
       ],
       "settings": {
         "fontStyle": ""
       }
     },
-    // {
-    //   "name": "Dark White (Reset)",
-    //   "scope": [
-    //     "variable.other.rust",
-    //     "meta.method.declaration.ts",
-    //     "meta.class.ts",
-    //     "support.type.property-name.json.comments",
-    //     "comment.line.documentation",
-    //     "punctuation.section.block",
-    //     "punctuation.definition.dictionary",
-    //     "variable.other.metavariable.name",
-    //     "keyword.operator",
-    //     "operator.keyword",
-    //   ],
-    //   "settings": {
-    //     "foreground": "#C2C7CC",
-    //     "fontStyle": ""
-    //   }
-    // },
     {
       "name": "Foreground (Italic)",
       "scope": [
@@ -1245,7 +1234,7 @@
       "scope": [
         "markup.bold",
         "markup.heading",
-        "magit.subheader"
+        "magit.subheader",
       ],
       "settings": {
         "fontStyle": "bold"
