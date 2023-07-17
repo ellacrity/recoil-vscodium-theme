@@ -18,7 +18,12 @@
   "categories": [
     "Themes"
   ],
+  "extensionKind": [
+    "ui"
+  ],
+  "homepage": "https://github.com/ellacrity/recoil-vscodium-theme",
   "repository": {
+    "type": "git",
     "url": "https://github.com/ellacrity/recoil-vscodium-theme"
   },
   "engines": {

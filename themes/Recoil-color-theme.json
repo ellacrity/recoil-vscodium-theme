@@ -170,7 +170,7 @@
     "terminal.ansiBlue": "#60E2F2",
     "terminal.ansiCyan": "#3BF7B8",
     "terminal.ansiGreen": "#A3C95D",
-    "terminal.ansiMagenta": "#FEB4D8", 
+    "terminal.ansiMagenta": "#FEB4D8",
     "terminal.ansiRed": "#FD7C68",
     "terminal.ansiWhite": "#C2C7CC",
     "terminal.ansiYellow": "#FFCA7A",
@@ -200,7 +200,6 @@
     "banner.foreground": "#C2C7CC",
     "banner.iconForeground": "#68C6FD",
     //#breadcrumb
-    
     "breadcrumb.background": "#34415640",
     "breadcrumb.foreground": "#C2C7CC",
     "breadcrumb.activeSelectionForeground": "#DADEE2",
@@ -706,6 +705,7 @@
         "storage.type.rust",
         "keyword.other.fn.rust",
         "storage.modifier.mut.rust",
+        "storage.modifier.rust",
         "storage.modifier.ts",
         "meta.class.ts",
         "variable.other.readwrite.ts",
@@ -1016,7 +1016,7 @@
       "scope": [
         "entity.name.function.macro",
         "variable.other.metavariable.specifier",
-        "entity.name.type.numeric"
+        "entity.name.type.numeric",
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1131,7 +1131,9 @@
         "meta.diff.header.to-file",
         "meta.diff.header.from-file",
         "variable.other.metavariable.name",
-        "meta.import.ts"
+        "meta.import.ts",
+        "variable.other.metavariable.name",
+        "keyword.operator.key-value",
       ],
       "settings": {
         "foreground": "#ECEDEE",
@@ -1206,7 +1208,11 @@
         // "keyword.operator",
         "operator.keyword",
         "punctuation.definition.array.begin.json",
-        "punctuation.definition.array.end.json"
+        "punctuation.definition.array.end.json",
+        "punctuation.definition.dictionary",
+        "variable.other.metavariable.name",
+        "punctuation.brackets.round",
+        "punctuation.brackets.angle",
       ],
       "settings": {
         "fontStyle": ""
@@ -1226,7 +1232,7 @@
       "scope": [
         "markup.bold",
         "markup.heading",
-        "magit.subheader"
+        "magit.subheader",
       ],
       "settings": {
         "fontStyle": "bold"
