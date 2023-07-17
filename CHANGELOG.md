@@ -4,6 +4,12 @@ All notable changes to the "recoil" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.1] - 2023-07-17
+
+## Changed
+
+- Bumped the version to `0.4.1` as workaround for publishing the same version
+
 ## [0.4.0] - 2023-07-17
 
 ### Added 
