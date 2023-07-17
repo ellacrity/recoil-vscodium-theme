@@ -1,6 +1,5 @@
 # Recoil
 
-<<<<<<< HEAD
 [`recoil`][project-repo] is a dark theme for VSCodium with a focus on providing full semantic token support for various programming languages.
 
 ## Language Support
@@ -35,26 +34,6 @@ After installation is complete, simply set your color theme to `Recoil`.
 This is free software. As such, the source code is hosted publicly and made available to anyone that wishes to view the source code.
 
 The extension is currently [hosted on GitHub][project-repo]. You can clone it, modify it, fork it or do whatever you like with it.
-=======
-[`recoil`][project-repo] is a dark theme for VSCodium. It is meant for my own
-personal use.
-
-## Disclaimer
-
-This project is for my own personal use. Support for particular programming languages is not
-guaranteed, but I will accept pull requests and modifications to improve it.
-
-## Installation
-
-Unfortunately, Microsoft does not provide first-class support for VSCodium extensions. As such,
-you may need to build and install it from source. I recently published this extension to the
-[`Open VSX Registry`][open-vsx], so you should be able to install it just like any other extension.
-
-### Building from Source
-
-The source code to this project is freely available on GitHub, so it can be built from source very
-easily.
->>>>>>> cf9aae6c3fff5727bc3b590743e506546081fb06
 
 To build this project manually, from source:
 
@@ -65,11 +44,7 @@ To build this project manually, from source:
    - From your terminal console (see below).
    - Right-click on the generated __vsix__ file, then __`Install Extension VSIX`__
    - Run the following command within VSCodium: __`Extensions: Install from VSIX`__
-<<<<<<< HEAD
-
-=======
    
->>>>>>> cf9aae6c3fff5727bc3b590743e506546081fb06
 ```shell
 git clone https://github.com/ellacrity/recoil-vscodium-theme
 cd recoil-vscodium-theme
@@ -78,21 +53,9 @@ npm run build
 codium --install-extension recoil-${version}.vsix
 ```
 
-<<<<<<< HEAD
-## Development Status
-
-This project is under active development.
-
-### Stability
-
-This project follows semantic versioning (semver). Before 1.0.0, br is crucial for end-users to be aware
-This software is under active development. However, if you notice a breaking change
-for a minor or patch version, please open an issue and I will address it as quickly as possible.
-=======
 ## Stability
 
 I will do my best to follow semantic versioning, but there may be occasions where an accidental breaking change occurs. If this happens, please open an issue and I will get to it as quickly as possible.
->>>>>>> cf9aae6c3fff5727bc3b590743e506546081fb06
 
 ## Contributing
 
@@ -102,30 +65,21 @@ If your changes are approved, open a pull request and I will review your changes
 
 Following the above steps is the best way to ensure your contribution is accepted.
 
-### Contribution / Attribution
-
-Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in
-[`recoil`][project-repo] by you, shall be licensed as MIT, without any additional terms or conditions.
-
 ## License
 
 This project is licensed under the [MIT license][license].
 
-<<<<<<< HEAD
-=======
 ### Contribution
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in
 [`recoil`][project-repo] by you, shall be licensed as MIT, without any additional terms or conditions.
 
->>>>>>> cf9aae6c3fff5727bc3b590743e506546081fb06
 <!-- Links section -->
 
 [project-repo]: https://github.com/ellacrity/recoil-vscodium-theme
 [license]: https://github.com/ellacrity/recoil-vscodium-theme/blob/main/LICENSE
 [nerd-fonts]: https://github.com/ryanoasis/nerd-fonts
 [open-vsx]: https://open-vsx.org/
-<<<<<<< HEAD
 
 <!-- Languages -->
 [rust]: https://www.rust-lang.org/
@@ -134,5 +88,3 @@ Unless you explicitly state otherwise, any contribution intentionally submitted 
 [yaml]: https://yaml.org/
 [golang]: https://go.dev/
 [zig]: https://ziglang.org/
-=======
->>>>>>> cf9aae6c3fff5727bc3b590743e506546081fb06
