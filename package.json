@@ -1,6 +1,6 @@
 {
   "name": "recoil",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "displayName": "Recoil - Theme",
   "description": "Custom high-contrast theme to suit my daily workflow.",
   "license": "MIT",
@@ -30,8 +30,11 @@
     "vscode": "^1.73.0"
   },
   "scripts": {
-    "publish": "npx ovsx publish -p $OPEN_VSX_TOKEN",
-    "build": "npx vsce package"
+    "publish": "npx ovsx publish --pat $OPEN_VSX_TOKEN",
+    "vsce-build": "npx vsce package",
+    "publish-all": "npm run vsce-publish && npm run ovsx-publish",
+    "vsce-publish": "npx vsce publish --pat $VS_MARKETPLACE_TOKEN",
+    "ovsx-publish": "npx ovsx publish --pat $OPEN_VSX_TOKEN"
   },
   "contributes": {
     "themes": [
