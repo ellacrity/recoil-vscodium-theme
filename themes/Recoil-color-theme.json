@@ -156,7 +156,7 @@
     "settings.headerForeground": "#FBA94B",
     "settings.modifiedItemIndicator": "#68C6FD",
     "sideBar.background": "#091118",
-    "sideBar.foreground": "#DADEE2",
+    "sideBar.foreground": "#EFEBDC",
     "sideBar.border": "#FBA94B99",
     "sideBarTitle.foreground": "#FBA94B",
     "statusBar.background": "#050D14",
@@ -183,10 +183,10 @@
     "terminal.ansiBrightWhite": "#ECEDEE",
     "terminal.ansiBrightYellow": "#FBE39D",
     "terminal.background": "#050D14",
-    "terminal.foreground": "#DADEE2",
+    "terminal.foreground": "#EFEBDC",
     "terminal.selectionBackground": "#558B2F",
-    "terminal.selectionForeground": "#DADEE2",
-    "terminalCursor.foreground": "#DADEE2",
+    "terminal.selectionForeground": "#EFEBDC",
+    "terminalCursor.foreground": "#EFEBDC",
     /* Text links */
     "textLink.activeForeground": "#67E07B",
     "textLink.foreground": "#68C6FD",
@@ -202,7 +202,7 @@
     //#breadcrumb
     "breadcrumb.background": "#34415640",
     "breadcrumb.foreground": "#C2C7CC",
-    "breadcrumb.activeSelectionForeground": "#DADEE2",
+    "breadcrumb.activeSelectionForeground": "#EFEBDC",
     "breadcrumb.focusForeground": "#FBA94B",
     "breadcrumbPicker.background": "#1C2630",
     "button.secondaryBackground": "#3A3D41",
@@ -530,8 +530,8 @@
     "statusBarItem.remoteForeground": "#1C2630",
     "statusBarItem.warningBackground": "#A45A24",
     "statusBarItem.warningForeground": "#ECEDEE",
-    /* 
-      FIXME: Symbols 
+    /*
+      FIXME: Symbols
       */
     "symbolIcon.arrayForeground": "#FBA94B",
     "symbolIcon.booleanForeground": "#E0B4FE",
@@ -799,7 +799,6 @@
         "punctuation.support.type.property-name",
         "support.type.property-name",
         "support.type.vendored.property-name",
-        "support.type.property-name.table.toml",
         "variable.other.member",
         "variable.other.object.property",
         "variable.other.object.property.ts",
@@ -812,6 +811,16 @@
         "constant.other.placeholder",
         "meta.interpolation.rust",
         "punctuation.definition.template-expression",
+      ],
+      "settings": {
+        "foreground": "#FBA94B",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Orange (Bold Underline)",
+      "scope": [
+        "support.type.property-name.table.toml",
       ],
       "settings": {
         "foreground": "#FBA94B",
@@ -866,7 +875,11 @@
         "constant.character",
         "punctuation.definition.char",
         "punctuation.definition.string",
+        "string.quoted.double",
         "string.quoted.double.rust",
+        "string.quoted.double.yaml",
+        "string.quoted.double.json",
+        "string.quoted.single.basic.line.toml",
         "string.quoted.double.json.comments",
         "string.quoted.double.go"
       ],
@@ -944,16 +957,6 @@
         "fontStyle": ""
       }
     },
-    // {
-    //   "name": "Bright Pink (Bold)",
-    //   "scope": [
-    //     "meta.attribute.rust"
-    //   ],
-    //   "settings": {
-    //     "foreground": "#FECDEE",
-    //     "fontStyle": "bold"
-    //   }
-    // },
     {
       "name": "Bright Purple (Normal)",
       "scope": [
@@ -1205,7 +1208,6 @@
         "punctuation.section.block",
         "punctuation.definition.dictionary",
         "variable.other.metavariable.name",
-        // "keyword.operator",
         "operator.keyword",
         "punctuation.definition.array.begin.json",
         "punctuation.definition.array.end.json",
@@ -1213,6 +1215,10 @@
         "variable.other.metavariable.name",
         "punctuation.brackets.round",
         "punctuation.brackets.angle",
+        "constant.language.json.comments",
+        "punctuation.definition.table.inline.toml",
+        "punctuation.definition.array.toml",
+        "constant.language.boolean",
       ],
       "settings": {
         "fontStyle": ""
@@ -1625,15 +1631,15 @@
     },
     //# namespace (imports)
     "namespace": {
-      "foreground": "#DADEE2",
+      "foreground": "#EFEBDC",
       "bold": false
     },
     "namespace.injected": {
-      "foreground": "#DADEE2",
+      "foreground": "#EFEBDC",
       "bold": false
     },
     "namespace.defaultLibrary": {
-      "foreground": "#DADEE2",
+      "foreground": "#EFEBDC",
       "bold": false
     },
     //# namespace (root of crate)
@@ -1699,14 +1705,6 @@
     "unresolvedReference": {
       "foreground": "#FC8DA8",
       "underline": true
-    },
-    "magit-ref-name": {
-      "foreground": "#78F8E0",
-      "bold": true
-    },
-    "magit-remote-ref-name": {
-      "foreground": "#80EBF9",
-      "bold": true
     },
     "selfParameter.injected": {
       "foreground": "#DADEE2",
@@ -1869,17 +1867,6 @@
       "bold": true,
       "underline": true,
       "italic": false
-    },
-    "magit-ref-name.injected": {
-      "foreground": "#78F8E0",
-      "bold": true
-    },
-    "magit-remote-ref-name.injected": {
-      "foreground": "#80EBF9",
-      "bold": true
-    },
-    "tomlTableKey": {
-      "foreground": "#FFCA7A"
     },
     "*.declaration.mutable": {
       "underline": true

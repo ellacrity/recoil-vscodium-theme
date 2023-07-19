@@ -1,8 +1,8 @@
 {
   "name": "recoil",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "displayName": "Recoil - Theme",
-  "description": "Custom high-contrast theme to suit my daily workflow.",
+  "description": "Colorful, legible, WCAG-compliant dark theme with semantic token support",
   "license": "MIT",
   "publisher": "ellacrity",
   "keywords": [

@@ -19,6 +19,7 @@ src/**/*.rs
 palette/
 tools/
 justfile
+.scratch*/
 
 ## IDE
 .vscode/

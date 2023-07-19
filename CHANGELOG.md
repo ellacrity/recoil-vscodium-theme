@@ -4,6 +4,29 @@ All notable changes to the "recoil" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.3] - 2023-07-18
+
+### Added
+
+- `.nvmrc` file to declare the Node.js version used
+
+### Changed
+
+- Updated `cd.yml` workflow to match push and pull requests to `main`
+- Started replacing "semanticTokenColorCustomizations" overrides with textMate rules
+- Improved support for TOML files
+- Changed UI foreground colors for some components to a yellow-tinted "white"
+
+### Removed
+
+- Unused rules and (some) duplicate entries
+
+## [0.4.2] - 2023=07-17
+
+### Changed
+
+- Modified deployment workflow to include both VSCode and VSCodium
+
 ## [0.4.1] - 2023-07-17
 
 ## Changed
@@ -12,7 +35,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.4.0] - 2023-07-17
 
-### Added 
+### Added
 
 - Add preliminary support for Go
 - Begin actve keeping of change log for end-users to keep track of project changes
@@ -37,7 +60,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.0.1] - 2023-03-24
 
-- Initial release 
+- Initial release
   - **Warning**: this project is not yet stable. Please refer to the [README](/README.md).
 - Generic support provided for Rust projects and related file types
   - Rust source code
