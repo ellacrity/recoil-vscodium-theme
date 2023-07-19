@@ -1,7 +1,7 @@
 {
   "name": "recoil",
-  "version": "0.4.3",
-  "displayName": "Recoil - Theme",
+  "version": "0.4.4",
+  "displayName": "Recoil",
   "description": "Colorful, legible, WCAG-compliant dark theme with semantic token support",
   "license": "MIT",
   "publisher": "ellacrity",
