@@ -4,6 +4,13 @@ All notable changes to the "recoil" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.6] - 2023-07-19
+
+### Changed
+
+- Decoupled deployment workflows into two separate jobs
+  - One of the jobs failing caused the entire workflow to fail
+
 ## [0.4.5] - 2023-07-19
 
 ### Fixed
