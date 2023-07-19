@@ -4,8 +4,18 @@ All notable changes to the "recoil" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.5] - 2023-07-19
+
+### Fixed
+
+- Bumped extension version to force update on Open VSX registry
+
 ## [0.4.4] - 2023-07-18
 
+### Changed
+
+- Updated the display name of the extension to simply "Recoil"
+  - The previous name "Recoil - Theme" was deemed redundant
 
 ## [0.4.3] - 2023-07-18
 
