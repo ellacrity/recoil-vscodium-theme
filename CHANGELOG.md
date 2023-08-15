@@ -4,6 +4,17 @@ All notable changes to the "recoil" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.5.0] - 2023-08-14
+
+### Added
+- New colors added to palette, such as Bone White, Tan and variants of existing colors
+- Better/increased support for `Go` and `Zig` (and basic Python)
+  - Over time, expect better support for these languages (particularly for Go and Zig)
+
+### Changed
+- Naming scheme for textmate rules slightly changed (WIP)
+  - Names all use `(Unset)` suffix if they remove `fontStyle` property; else `(Normal)` if they allow `fontStyle` passthrough
+
 ## [0.4.6] - 2023-07-19
 
 ### Changed
