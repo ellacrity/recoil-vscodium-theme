@@ -4,6 +4,22 @@ All notable changes to the "recoil" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.5.1] - 2023-08-17
+
+### Added
+- Expanded semantic token support for Zig
+- Editor bracket and indent / scope guide colors to match current palette
+
+### Changed
+- Removed color overrides in favor of more precise TextMate rules
+
+### Fixed
+- Several instances of "semanticTokenColors" were incorrectly overriding colors
+  - Most overrides exist on purpose; many still do not and may not be necessary
+
+### Removed
+- Extraneous comments and leftover artifacts from the theme file were deleted
+
 ## [0.5.0] - 2023-08-14
 
 ### Added
@@ -12,20 +28,18 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
   - Over time, expect better support for these languages (particularly for Go and Zig)
 
 ### Changed
-- Naming scheme for textmate rules slightly changed (WIP)
+- Naming scheme for TextMate rules slightly changed (WIP)
   - Names all use `(Unset)` suffix if they remove `fontStyle` property; else `(Normal)` if they allow `fontStyle` passthrough
 
 ## [0.4.6] - 2023-07-19
 
 ### Changed
-
 - Decoupled deployment workflows into two separate jobs
   - One of the jobs failing caused the entire workflow to fail
 
 ## [0.4.5] - 2023-07-19
 
 ### Fixed
-
 - Bumped extension version to force update on Open VSX registry
 
 ## [0.4.4] - 2023-07-18
@@ -44,7 +58,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 
 - Updated `cd.yml` workflow to match push and pull requests to `main`
-- Started replacing "semanticTokenColorCustomizations" overrides with textMate rules
+- Started replacing "semanticTokenColorCustomizations" overrides with TextMate rules
 - Improved support for TOML files
 - Changed UI foreground colors for some components to a yellow-tinted "white"
 
