@@ -2,6 +2,11 @@
 
 All notable changes to the "recoil" extension will be documented in this file.
 
+## [0.6.0] - 2023-08-21
+
+### Changed
+- Theme has been overhauled to conform to new color palette
+
 ## [0.5.2] - 2023-08-20
 
 ### Added
