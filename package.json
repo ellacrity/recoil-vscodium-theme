@@ -1,12 +1,13 @@
 {
   "name": "recoil",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "displayName": "Recoil",
   "description": "Colorful, legible, WCAG-compliant dark theme with semantic token support",
   "license": "MIT",
   "publisher": "ellacrity",
   "keywords": [
     "rust",
+    "zig",
     "toml",
     "json",
     "theme",

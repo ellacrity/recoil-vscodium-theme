@@ -2,7 +2,19 @@
 
 All notable changes to the "recoil" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.5.2] - 2023-08-20
+
+### Added
+- Better support for Rust declarative macros (`macro_rules!` items)
+- Continued incremental support for the Zig programming language
+
+### Changed
+- Primary foreground color now uses an amber hue rather than blue for better contrast
+- Overview ruler colors were changed to be more consistent with VCS (Git) colors
+- Operators are now bright blue by default to improve visibility
+
+### Fixed
+- GitHub Actions workflows now use the latest LTS version of Node.js
 
 ## [0.5.1] - 2023-08-17
 

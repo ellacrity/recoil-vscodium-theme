@@ -29,3 +29,5 @@ justfile
 engine/
 scripts/
 parser/
+
+resources/
