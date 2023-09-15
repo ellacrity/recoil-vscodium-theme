@@ -2,61 +2,91 @@
 
 All notable changes to the "recoil" extension will be documented in this file.
 
+## [0.6.6] - 2023-09-15
+
+### Added
+
+- Added better color support for JavaScript / TypeScript (still rudimentary)
+- Support for Zig is officially added
+  - ZLS unfortunately does not emit as much semantic token information as is needed to create a complete theme but as improvements are made, this project will be updated.
+
+### Changed
+
+- Operator specialization now means that colors are more consistent and puncutation was made easier to differentiate, etc.
+- Theme palette and general color scheme was iteratively improved
+
+### Removed
+
+- Duplicate entries where found
+  - This process is still not yet automated. Soon, it will be via a simple JSON parser to insert/remove color rules
+
 ## [0.6.0] - 2023-08-21
 
 ### Changed
+
 - Theme has been overhauled to conform to new color palette
 
 ## [0.5.2] - 2023-08-20
 
 ### Added
+
 - Better support for Rust declarative macros (`macro_rules!` items)
 - Continued incremental support for the Zig programming language
 
 ### Changed
+
 - Primary foreground color now uses an amber hue rather than blue for better contrast
 - Overview ruler colors were changed to be more consistent with VCS (Git) colors
 - Operators are now bright blue by default to improve visibility
 
 ### Fixed
+
 - GitHub Actions workflows now use the latest LTS version of Node.js
 
 ## [0.5.1] - 2023-08-17
 
 ### Added
+
 - Expanded semantic token support for Zig
 - Editor bracket and indent / scope guide colors to match current palette
 
 ### Changed
+
 - Removed color overrides in favor of more precise TextMate rules
 
 ### Fixed
+
 - Several instances of "semanticTokenColors" were incorrectly overriding colors
   - Most overrides exist on purpose; many still do not and may not be necessary
 
 ### Removed
+
 - Extraneous comments and leftover artifacts from the theme file were deleted
 
 ## [0.5.0] - 2023-08-14
 
 ### Added
+
 - New colors added to palette, such as Bone White, Tan and variants of existing colors
 - Better/increased support for `Go` and `Zig` (and basic Python)
   - Over time, expect better support for these languages (particularly for Go and Zig)
 
 ### Changed
+
 - Naming scheme for TextMate rules slightly changed (WIP)
   - Names all use `(Unset)` suffix if they remove `fontStyle` property; else `(Normal)` if they allow `fontStyle` passthrough
 
 ## [0.4.6] - 2023-07-19
 
 ### Changed
+
 - Decoupled deployment workflows into two separate jobs
   - One of the jobs failing caused the entire workflow to fail
 
 ## [0.4.5] - 2023-07-19
 
 ### Fixed
+
 - Bumped extension version to force update on Open VSX registry
 
 ## [0.4.4] - 2023-07-18
