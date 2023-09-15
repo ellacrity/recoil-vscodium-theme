@@ -1,0 +1,7 @@
+{
+    "useTabs": true,
+    "trailingComma": "all",
+    "endOfLine": "lf",
+    "printWidth": 85,
+    "tabWidth": 4
+}

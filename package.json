@@ -1,8 +1,8 @@
 {
   "name": "recoil",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "displayName": "Recoil",
-  "description": "Color theme aimed at Rust development and systems programming.",
+  "description": "Color theme aimed at modern systems languages (Rust, Zig, etc.)",
   "license": "MIT",
   "publisher": "ellacrity",
   "keywords": [
@@ -10,6 +10,8 @@
     "zig",
     "toml",
     "json",
+    "colorful",
+    "semantic-tokens",
     "theme",
     "codium",
     "dark",
