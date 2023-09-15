@@ -2,6 +2,14 @@
 
 All notable changes to the "recoil" extension will be documented in this file.
 
+## [0.6.8] - 2023-09-15
+
+### Fixed
+
+- Fixed accidental insertion of global "function" override
+  - This may or may not result in other languages losing color for function types.
+  - This will be addressed if that is the case.
+
 ## [0.6.7] - 2023-09-15
 
 ### Fixed

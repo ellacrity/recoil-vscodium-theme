@@ -1568,9 +1568,6 @@
     "constParameter.injected": {
       "foreground": "#FFCA7A"
     },
-    "function": {
-      "foreground": "#FD7C68"
-    },
     "function.unsafe": {
       "foreground": "#FD7C68"
     },
