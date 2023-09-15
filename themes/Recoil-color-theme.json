@@ -633,7 +633,6 @@
       "name": "Yellow (Bold)",
       "scope": [
         "variable.language.super.rust",
-        "storage.type.rust",
         "entity.name.function.macro.rules.rust"
       ],
       "settings": {
@@ -677,6 +676,9 @@
         "keyword.structure.zig",
         "keyword.default.zig",
         "keyword.import.go",
+        "storage.type.rust",
+        // FIXME: The `keyword.other.rust` overrides fine-grained rules, but not having it results in uncolored keywords.
+        "keyword.other.rust",
         "keyword.function.go",
         "keyword.package.go",
         "variable.language.special.self",

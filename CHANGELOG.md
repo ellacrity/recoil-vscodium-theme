@@ -2,6 +2,13 @@
 
 All notable changes to the "recoil" extension will be documented in this file.
 
+## [0.6.7] - 2023-09-15
+
+### Fixed
+
+- Removing "keyword.other.rust" TextMate rule caused no colors for certain keywords.
+  - This is temporarily being added back in until a better solution is found
+
 ## [0.6.6] - 2023-09-15
 
 ### Added
