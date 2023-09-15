@@ -1,8 +1,8 @@
 {
   "name": "recoil",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "displayName": "Recoil",
-  "description": "Colorful, legible, WCAG-compliant dark theme with semantic token support",
+  "description": "Color theme aimed at Rust development and systems programming.",
   "license": "MIT",
   "publisher": "ellacrity",
   "keywords": [

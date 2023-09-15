@@ -196,7 +196,7 @@
 		"settings.headerForeground": "#FBA94B",
 		"settings.modifiedItemIndicator": "#8BCEFD",
 		"sideBar.background": "#091118",
-		"sideBar.foreground": "#E4E1D8",
+		"sideBar.foreground": "#E4E2C8",
 		"sideBar.border": "#FBA94B99",
 		"sideBarTitle.foreground": "#FBA94B",
 		"statusBar.background": "#050D14",
@@ -223,7 +223,7 @@
 		"terminal.ansiBrightWhite": "#F2F1EE",
 		"terminal.ansiBrightYellow": "#FDE8AA",
 		"terminal.background": "#050D14",
-		"terminal.foreground": "#E4E1D8",
+		"terminal.foreground": "#E4E2C8",
 		"terminal.selectionBackground": "#40C8AEC0",
 		"terminal.selectionForeground": "#F2F1EE",
 		"terminalCursor.foreground": "#F2F1EE",
@@ -242,7 +242,7 @@
 		//# breadcrumb
 		"breadcrumb.background": "#34415640",
 		"breadcrumb.foreground": "#D8D2C0",
-		"breadcrumb.activeSelectionForeground": "#E4E1D8",
+		"breadcrumb.activeSelectionForeground": "#E4E2C8",
 		"breadcrumb.focusForeground": "#FBA94B",
 		"breadcrumbPicker.background": "#1C2630",
 		"button.secondaryBackground": "#3A3D41",
@@ -581,7 +581,7 @@
 		"symbolIcon.keywordForeground": "#FDE8AA",
 		"symbolIcon.methodForeground": "#6BFAF0",
 		"symbolIcon.moduleForeground": "#F2F1EE",
-		"symbolIcon.namespaceForeground": "#E4E1D8",
+		"symbolIcon.namespaceForeground": "#E4E2C8",
 		"symbolIcon.propertyForeground": "#FBA94B",
 		"symbolIcon.structForeground": "#8BCEFD",
 		"symbolIcon.typeParameterForeground": "#FFCA7A",
@@ -630,6 +630,16 @@
 	},
 	"tokenColors": [
 		{
+			"name": "Yellow (Bold)",
+			"scope": [
+				"variable.language.super.rust",
+			],
+			"settings": {
+				"foreground": "#F3D87F",
+				"fontStyle": "bold"
+			}
+		},
+		{
 			"name": "Yellow Bright (Unset)",
 			"scope": [
 				"entity.name.tag",
@@ -652,7 +662,6 @@
 				"storage.type.def.groovy",
 				"storage.type.namespace",
 				"storage.type.property",
-				"storage.type.rust",
 				"storage.type.struct",
 				"storage.type.ts",
 				"storage.type.type",
@@ -666,14 +675,28 @@
 				"keyword.import.go",
 				"keyword.function.go",
 				"keyword.package.go",
-				"variable.language.self",
 				"variable.language.special.self",
 				"variable.language.this",
 				"variable.language.this",
 				"keyword.control.trycatch.ts",
 				"meta.block.ts",
 				"meta.method.declaration.ts",
+				"keyword.control.at-rule.use.scss",
+				"keyword.control.at-rule.function.scss",
+				"keyword.other.fn.rust",
+				"keyword.other.rust",
+				"storage.modifier.mut.rust",
+				"storage.modifier.rust",
+				"storage.modifier.ts",
 				"meta.class.ts",
+				"variable.other.readwrite.ts",
+				"meta.object.member.ts",
+				"meta.objectliteral.ts",
+				"storage.type.class.ts",
+				"keyword.control.export.ts",
+				"keyword.control.flow.ts",
+				"meta.block.ts",
+				"meta.method.declaration.ts",
 			],
 			"settings": {
 				"foreground": "#FDE8AA",
@@ -684,7 +707,9 @@
 			"name": "Yellow Bright (Bold)",
 			"scope": [
 				"storage.modifier.local.shell",
-				"keyword.control.flow.python"
+				"keyword.control.flow.python",
+				"keyword.other.crate.rust",
+				"storage.type.rust",
 			],
 			"settings": {
 				"foreground": "#FDE8AA",
@@ -732,9 +757,11 @@
 				"meta.class.inheritance.python",
 				"meta.function.python",
 				"meta.item-access.python",
+				"entity.other.attribute-name.pseudo-element.css",
 				"keyword.control.trycatch.zig",
 				"support.function.builtin.zig",
 				"keyword.operator.bitwise.zig",
+				"entity.name.tag.wildcard.scss"
 			],
 			"settings": {
 				"foreground": "#3BF7B8"
@@ -754,7 +781,8 @@
 				"keyword.operator.address.go",
 				"keyword.operator.macro.dollar.rust",
 				"keyword.operator.dereference.rust",
-				"keyword.operator.borrow.and.rust",
+				"keyword.control.flow.block-scalar.literal.yaml",
+				"punctuation.definition.keyword.scss"
 			],
 			"settings": {
 				"foreground": "#3BF7B8",
@@ -785,32 +813,6 @@
 			}
 		},
 		{
-			"name": "Yellow (Unset)",
-			"scope": [
-				"keyword.other.rust",
-				"storage.type.rust",
-				"keyword.other.fn.rust",
-				"storage.modifier.mut.rust",
-				"storage.modifier.rust",
-				"storage.modifier.ts",
-				"meta.class.ts",
-				"variable.other.readwrite.ts",
-				"meta.object.member.ts",
-				"meta.objectliteral.ts",
-				"storage.type.class.ts",
-				"meta.class.ts",
-				"keyword.control.export.ts",
-				"keyword.control.flow.ts",
-				"meta.block.ts",
-				"meta.method.declaration.ts",
-				"meta.class.ts"
-			],
-			"settings": {
-				"foreground": "#FDE8AA",
-				"fontStyle": ""
-			}
-		},
-		{
 			"name": "Cyan Bright (Bold)",
 			"scope": [
 				"keyword.operator.assignment.equal.rust",
@@ -833,6 +835,7 @@
 				"constant.numeric.oct",
 				"constant.numeric.binary",
 				"constant.numeric.float.zig",
+				"constant.numeric.css",
 				"keyword.operator.attribute.inner",
 				"punctuation.definition.variable.shell",
 				"constant.numeric.hexfloat.zig",
@@ -849,7 +852,8 @@
 			"scope": [
 				"support.class",
 				"punctuation.definition.range.diff",
-				"meta.diff.range"
+				"meta.diff.range",
+				"keyword.control.each.scss"
 			],
 			"settings": {
 				"foreground": "#8BCEFD"
@@ -870,17 +874,19 @@
 		{
 			"name": "Cyan (Normal)",
 			"scope": [
+				"constant.character.escape",
+				"constant.character.escape.go",
 				"entity.name.function-call",
+				"entity.name.function.go",
+				"entity.name.function.rust",
+				"entity.name.function.zig",
 				"meta.function-call.generic.python",
 				"entity.other.attribute-name.table.toml",
 				"entity.other.attribute-name.table.array.toml",
 				"markup.deleted",
 				"punctuation.definition.deleted.diff",
-				"constant.character.escape",
-				"constant.character.escape.go",
-				"entity.name.function.go",
-				"entity.name.function.rust",
-				"entity.name.function.zig",
+				"string.unquoted.plain.out.yaml",
+				"support.function.misc.scss"
 			],
 			"settings": {
 				"foreground": "#6BFAF0"
@@ -890,14 +896,25 @@
 			"name": "Cyan (Bold)",
 			"scope": [
 				"entity.name.type.class.ts",
-				"meta.class.ts",
 				"variable.parameter.label.asm",
-				"variable.language.super.ts"
+				"variable.language.super.ts",
 			],
 			"settings": {
 				"foreground": "#6BFAF0",
 				"fontStyle": "bold"
 			}
+		},
+		{
+			"name": "Orange (Normal)",
+			"scope": [
+				"string.unquoted.block.yaml",
+				"punctuation.definition.block.sequence.item.yaml",
+				"variable.other.metavariable.name",
+				"support.type.map.key.scss"
+			],
+			"settings": {
+				"foreground": "#FBA94B",
+			},
 		},
 		{
 			"name": "Orange (Unset)",
@@ -949,12 +966,21 @@
 			}
 		},
 		{
+			"name": "Orange Bright (Bold)",
+			"scope": [
+				"keyword.operator.borrow.and.rust",
+			],
+			"settings": {
+				"foreground": "#FFCA7A",
+				"fontStyle": "bold underline"
+			}
+		},
+		{
 			"name": "Orange Bright (Unset)",
 			"scope": [
 				"entity.name.tag.toml",
 				"entity.name.tag.yaml",
 				"markup.changed",
-				"meta.class.ts",
 				"meta.definition.property.ts",
 				"meta.field.declaration.ts",
 				"variable.object.property.ts"
@@ -988,7 +1014,8 @@
 				"string.quoted.triple.basic.block.toml",
 				"keyword.operator.address.go",
 				"string.quoted.single",
-				"string.quoted.docstring.multi.python"
+				"string.quoted.docstring.multi.python",
+				"constant.other.color.rgb-value.hex.css"
 			],
 			"settings": {
 				"foreground": "#A3C95D"
@@ -1025,6 +1052,8 @@
 			"scope": [
 				"constant.other.caps.rust",
 				"variable.other.constant",
+				"constant.numeric.float.zig",
+				"constant.numeric.css"
 			],
 			"settings": {
 				"foreground": "#ABF282"
@@ -1038,6 +1067,7 @@
 				"meta.field.declaration.ts",
 				"constant.language.python",
 				"constant.other.caps.python",
+				"punctuation.definition.constant.css",
 			],
 			"settings": {
 				"foreground": "#ABF282",
@@ -1058,6 +1088,7 @@
 			"scope": [
 				"string.unquoted.argument.shell",
 				"entity.other.inherited-class.python",
+				"variable.scss"
 			],
 			"settings": {
 				"foreground": "#FEB4D8",
@@ -1072,7 +1103,6 @@
 				"entity.name.type.primitive.rust",
 				"punctuation.definition.attribute.rust",
 				"support.type.primitive",
-				"keyword.type.integer.zig"
 			],
 			"settings": {
 				"foreground": "#FEB4D8",
@@ -1166,17 +1196,7 @@
 				"constant.language.json.comments",
 				"entity.name.function.macro",
 				"variable.other.metavariable.specifier",
-				"entity.name.type.numeric"
-			],
-			"settings": {
-				"foreground": "#E0B4FE",
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "Purple Bright (Normal)",
-			"scope": [
-				"keyword.type.zig"
+				"entity.name.type.numeric",
 			],
 			"settings": {
 				"foreground": "#E0B4FE",
@@ -1198,6 +1218,8 @@
 				"constant.language.boolean",
 				"keyword.constant.bool.zig",
 				"keyword.constant.default.zig",
+				"keyword.type.integer.zig",
+				"keyword.type.zig",
 			],
 			"settings": {
 				"foreground": "#E0B4FE",
@@ -1215,6 +1237,16 @@
 			"settings": {
 				"foreground": "#C69EFA",
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Purple Bright (Underline)",
+			"scope": [
+				"support.function.builtin.zig",
+			],
+			"settings": {
+				"foreground": "#E0B4FE",
+				"fontStyle": "underline"
 			}
 		},
 		{
@@ -1295,14 +1327,15 @@
 			}
 		},
 		{
-			"name": "Bright White (Bold)",
+			"name": "White Bright (Bold)",
 			"scope": [
 				"meta.diff.header.to-file",
 				"meta.diff.header.from-file",
 				"variable.other.metavariable.name",
 				"meta.import.ts",
 				"variable.other.metavariable.name",
-				"keyword.operator.key-value"
+				"keyword.operator.key-value",
+				"variable.language.self.rust",
 			],
 			"settings": {
 				"foreground": "#F2F1EE",
@@ -1331,7 +1364,6 @@
 		{
 			"name": "White (Bold)",
 			"scope": [
-				"keyword.control.flow.block-scalar.literal.yaml",
 				"keyword.operator",
 				"punctuation",
 				"punctuation.semi.rust",
@@ -1360,11 +1392,10 @@
 			}
 		},
 		{
-			"name": "Foreground (Unset)",
+			"name": "Transparent (Unset)",
 			"scope": [
 				"variable.other.rust",
 				"meta.method.declaration.ts",
-				"meta.class.ts",
 				"support.type.property-name.json.comments",
 				"comment.line.documentation",
 				"punctuation.section.block",
@@ -1387,7 +1418,7 @@
 			}
 		},
 		{
-			"name": "Foreground (Italic)",
+			"name": "Transparent (Italic)",
 			"scope": [
 				"markup.italic"
 			],
@@ -1396,18 +1427,20 @@
 			}
 		},
 		{
-			"name": "Foreground (Bold)",
+			"name": "Transparent (Bold)",
 			"scope": [
 				"markup.bold",
 				"markup.heading",
-				"magit.subheader"
+				"magit.subheader",
+				"punctuation.separator.dictionary.pair.json.comments",
+				"entity.name.namespace.rust"
 			],
 			"settings": {
 				"fontStyle": "bold"
 			}
 		},
 		{
-			"name": "Foreground (Underline)",
+			"name": "Transparent (Underline)",
 			"scope": [
 				"meta.mutable"
 			],
@@ -1421,6 +1454,9 @@
   Coloring for semantic tokens
   */
 	"semanticTokenColors": {
+		"type": {
+			"foreground": "#FEB4D8",
+		},
 		"number.attribute": {
 			"foreground": "#A2F3F6",
 			"fontStyle": ""
@@ -1506,7 +1542,7 @@
 			"foreground": "#E0B4FE"
 		},
 		"selfParameter": {
-			"foreground": "#E4E1D8",
+			"foreground": "#E4E2C8",
 			"bold": true
 		},
 		"string": {
@@ -1555,12 +1591,11 @@
 		"class.declaration": {
 			"bold": true
 		},
-		//# variable
-		"variable.unread": {
-			"foreground": "#D4DDE8",
-			"bold": true,
-			"underline": true
+		"errorTag": {
+			"foreground": "#90FEC3",
+			"bold": true
 		},
+		//# variable
 		//# trait (interface)
 		"interface": {
 			"foreground": "#FEB4D8"
@@ -1709,6 +1744,11 @@
 		"variable.static.declaration.public": {
 			"foreground": "#ABF282"
 		},
+		"variable.unread": {
+			"foreground": "#D4DDE8",
+			"bold": true,
+			"underline": true
+		},
 		// ? TODO: Figure out a better way to handle the global fallback color that
 		// VSCodium uses for arbitrary types. "WebViews" do not respect these rules.
 		"struct": {
@@ -1798,18 +1838,20 @@
 		},
 		//# namespace (imports)
 		"namespace": {
-			"foreground": "#E4E1D8",
+			"foreground": "#E4E2C8",
 			"bold": true
 		},
 		"namespace.declaration": {
+			"foreground": "#E4E2C8",
 			"bold": true,
+			"underline": true
 		},
 		"namespace.injected": {
-			"foreground": "#E4E1D8",
+			"foreground": "#E4E2C8",
 			"bold": true
 		},
 		"namespace.defaultLibrary": {
-			"foreground": "#E4E1D8",
+			"foreground": "#E4E2C8",
 			"bold": true
 		},
 		//# namespace (root of crate)
@@ -1820,7 +1862,8 @@
 		},
 		"namespace.crateRoot.defaultLibrary": {
 			"foreground": "#F2F1EE",
-			"bold": true
+			"bold": true,
+			"underline": true
 		},
 		"namespace.crateRoot.injected": {
 			"foreground": "#F2F1EE",
@@ -1862,7 +1905,7 @@
 			"bold": false
 		},
 		"operator": {
-			"foreground": "#8F99A3",
+			"foreground": "#C2E5FA",
 			"bold": true
 		},
 		"operator.controlFlow": {
