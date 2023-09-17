@@ -8,28 +8,6 @@ This extension provides the kind of color theme that I simply could not find any
 hours. Every theme had defects, or missing features that I needed for maximum productivity. Instead of putting
 together a "solution" which simply overrided some common theme, I created my own from the ground up.
 
-### Should I use This?
-
-This theme is tailored to my specific needs, and I make incremental changes using an iterative approach to
-development. I do work extensively with [`Rust`][rust-lang], but occasionally with [`Go`][go-lang] for network-based
-tools. More recently, I have discovered a wonderful language called "[`Zig`][zig-lang]". Basic, functional support
-exists for `Zig` and it will likely be prioritized when applying updates to this theme.
-
-**TL;DR**: If you do not work with the languages listed above, then this extension is probably not for you! And that is okay! Also, if you would like to see a language added and don't mind helping out, I would absolutely love contributions!!
-
-## Development Status
-
-This project is currently under **active development**.
-
-### Registries
-
-This extension is available for both VSCodium
-vailable for both VSCodium and VSCode.
-
-The goal for this project is to provide custom themes based on a shared palette. Variants will be introduced to the project in the near future.
-
-for VSCodium with a focus on providing full semantic token support for various programming languages.
-
 ### Official Language Support
 
 The following languages and serialization formats are supported:
@@ -42,6 +20,25 @@ The following languages and serialization formats are supported:
 - [`YAML`][yaml-fmt]: yaml/yml schema files
 
 If you find that something is missing, or inconsistent, please feel free to open an issue so we can address it as quickly as possible. Thanks!
+
+
+### Should I use This?
+
+This theme is tailored to my specific needs, which are largely centered around working with [`Rust`][rust-lang]
+and [`Zig`][zig-lang]. Occasionally, I work with some other languages related to systems programming,
+such as [`Go`][go-lang] and others. I try to give most common languages at least rudimentary support.
+However, I do not guarantee support outside of the list of supported languages.
+
+**TL;DR**: If you do not work with the languages listed above, then this extension is probably not for you! And that is okay! Also, if you would like to see a language added and don't mind helping out, I would absolutely love contributions!!
+
+## Development Status
+
+This project is currently under **active development**.
+
+### Registries
+
+This extension is available for both VSCodium and VSCode. It is published to both extension
+registries and should be easy to install. Simply install it as you would any other extension.
 
 ## Future Goals
 
@@ -57,15 +54,17 @@ If you find that something is missing, or inconsistent, please feel free to open
 
 ### Contributors Needed
 
-Incremental support for more and more languages will be added over time. There is currently only a single contributor (myself), and I have a have many things going on right now, so I could really use help maintaining this extension.
+Incremental support for more and more languages will be added over time. There is currently only a
+single contributor (myself), and I have a have many things going on right now, so I could really use
+help maintaining this extension.
 
 If you would like to see something added, please consider [contributing to the project](#contributing).
 
-Language support is in the works for [`Go`][golang], and [`Zig`][zig] will likely follow soon after that.
-
 ## Installation
 
-This extension can be found on [Open VSX][open-vsx]. This option is the easiest and most straightforward. [Install the extension](#open-vsx), enable it and you should be all set. From there, you may customize the theme as you see fit.
+This extension can be found on [Open VSX][open-vsx]. This option is the easiest and most straightforward.
+[Install the extension](#open-vsx), enable it and you should be all set. From there, you may customize the
+theme as you see fit.
 
 To build the project from source, please see: [Building from Source](#building-from-source).
 
