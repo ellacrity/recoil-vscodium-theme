@@ -1,6 +1,9 @@
-# Recoil
-
-[`Recoil`][project-repo] is a colorful dark theme centered around my daily workflow as a systems programmer.
+<div align="center">
+  <img loading="lazy" width="128px" src="./assets/images/logo-transparent.png" alt="image_name png" />
+  <div style="margin:1rem,auto,0rem,auto;font-size:100%;letter-spacing:1px;font-variant-caps:all-small-caps;width:min(480px, 80ch)">
+    Recoil is a custom theme supporting modern systems programming
+  </div>
+</div>
 
 ## Description
 

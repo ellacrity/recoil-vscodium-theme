@@ -30,5 +30,7 @@ engine/
 scripts/
 parser/
 
+## Assets
 resources/
 colour
+!/assets

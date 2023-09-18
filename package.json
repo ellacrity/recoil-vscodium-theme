@@ -25,6 +25,7 @@
   "extensionKind": [
     "ui"
   ],
+  "icon": "./assets/images/logo.png",
   "homepage": "https://github.com/ellacrity/recoil-vscodium-theme",
   "repository": {
     "type": "git",
