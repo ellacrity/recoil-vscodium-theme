@@ -15,12 +15,12 @@ together a "solution" which simply overrided some common theme, I created my own
 
 The following languages and serialization formats are supported:
 
-- [`Rust`][rust-lang]: crates and workspaces
-- [`Zig`][zig-lang]: crates and workspaces
-- [`Go`][go-lang]: crates and workspaces
-- [`TOML`][toml-fmt]: schema files related to Rust development (Cargo, Rustfmt)
-- [`JSON`][json-fmt]: json/jsonc configuration and settings files
-- [`YAML`][yaml-fmt]: yaml/yml schema files
+- [`Rust`][rust-lang]
+- [`Zig`][zig-lang]
+- [`Go`][go-lang]
+- [`TOML`][toml-fmt]
+- [`JSON`][json-fmt]
+- [`YAML`][yaml-fmt]
 
 If you find that something is missing, or inconsistent, please feel free to open an issue so we can address it as quickly as possible. Thanks!
 

@@ -66,12 +66,12 @@
     "editorGutter.background": "#25293640",
     "editorGutter.deletedBackground": "#D58485",
     "editorGutter.modifiedBackground": "#8BCEFD",
-    "editorIndentGuide.background1": "#BABABA",
-    "editorIndentGuide.background2": "#BA90EC",
-    "editorIndentGuide.background3": "#90EC6E",
-    "editorIndentGuide.background4": "#BABABA",
-    "editorIndentGuide.background5": "#F7AB6E",
-    "editorIndentGuide.background6": "#6EECF7",
+    "editorIndentGuide.background1": "#BABABABF",
+    "editorIndentGuide.background2": "#BA90ECBF",
+    "editorIndentGuide.background3": "#90EC6EBF",
+    "editorIndentGuide.background4": "#BABABABF",
+    "editorIndentGuide.background5": "#F7AB6EBF",
+    "editorIndentGuide.background6": "#6EECF7BF",
     "editorIndentGuide.activeBackground1": "#BABABA80",
     "editorIndentGuide.activeBackground2": "#BA90EC80",
     "editorIndentGuide.activeBackground3": "#90EC6E80",
@@ -704,7 +704,9 @@
         "keyword.control.flow.ts",
         "meta.method.declaration.ts",
         "keyword.control.from.ts",
-        "keyword.control.import.python"
+        "keyword.control.import.python",
+        "keyword.other.unit",
+        "keyword.other.unit.percentage"
       ],
       "settings": {
         "foreground": "#FDE8AA",
@@ -746,13 +748,14 @@
         "entity.other.attribute-name.pseudo-element.css",
         "keyword.control.trycatch.js",
         "keyword.control.trycatch.ts",
-        "keyword.control.trycatch.zig",
-        "keyword.operator.bitwise.zig",
         "keyword.statement.zig",
         "entity.name.tag.wildcard.scss",
         "meta.block.ts",
         "entity.other.attribute-name.class",
-        "entity.other.attribute-name.pseudo-element.css"
+        "entity.other.attribute-name.pseudo-element.css",
+        "keyword.control.trycatch.zig",
+        "keyword.operator.bitwise.zig",
+        "keyword.type.zig"
       ],
       "settings": {
         "foreground": "#3BF7B8"
@@ -856,7 +859,8 @@
         "entity.name.type.class.python",
         "meta.indexed-name.python",
         "entity.name.type.zig",
-        "meta.type.declaration.ts"
+        "meta.type.declaration.ts",
+        "support.function.misc.scss",
       ],
       "settings": {
         "foreground": "#8BCEFD",
@@ -866,7 +870,8 @@
     {
       "name": "Blue Bright (Normal)",
       "scope": [
-        "custom.punctuation.section.insertion.bracket"
+        "custom.punctuation.section.insertion.bracket",
+        "variable.other.metavariable.name.rust"
       ],
       "settings": {
         "foreground": "#C2E5FA"
@@ -888,7 +893,6 @@
         "markup.deleted",
         "punctuation.definition.deleted.diff",
         "string.unquoted.plain.out.yaml",
-        "support.function.misc.scss",
         "entity.name.function.js",
         "entity.name.function.ts",
         "custom.punctuation.section.insertion.dollar.simple",
@@ -944,7 +948,6 @@
         "constant.other.placeholder",
         "meta.interpolation.rust",
         "punctuation.definition.template-expression",
-        "variable.other.metavariable.name"
       ],
       "settings": {
         "foreground": "#FBA94B",
@@ -1112,7 +1115,6 @@
     {
       "name": "Pink (Unset)",
       "scope": [
-        "support.function.misc.scss",
         "entity.name.type.primitive.rust",
         "punctuation.definition.attribute.rust",
         "support.type.primitive",
@@ -1208,7 +1210,8 @@
         "storage.type.rune.go",
         "storage.type.string.go",
         "storage.type.uintptr.go",
-        "keyword.other.unit",
+        // TODO: Ensure that removal of this rule does not lead to uncoloured tokens
+        // "keyword.other.unit",
         "variable.other.metavariable.specifier",
         "constant.language.json.comments",
         "entity.name.function.macro",
@@ -1238,7 +1241,6 @@
         "keyword.constant.bool.zig",
         "keyword.constant.default.zig",
         "keyword.type.integer.zig",
-        "keyword.type.zig"
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1482,7 +1484,7 @@
   "semanticTokenColors": {
     "type": {
       "foreground": "#FEB4D8",
-      "bold": true
+      "bold": false,
     },
     "number.attribute": {
       "foreground": "#A2F3F6",
@@ -1554,7 +1556,7 @@
       "bold": false
     },
     "derive": {
-      "foreground": "#FEB4D8"
+      "foreground": "#E4E2C8"
     },
     "derive.attribute": {
       "bold": true
@@ -1604,6 +1606,9 @@
     },
     "function": {
       "foreground": "#6BFAF0",
+    },
+    "function.declaration": {
+      "bold": true,
     },
     "function.unsafe": {
       "foreground": "#FD7C68"
@@ -1708,32 +1713,32 @@
       "bold": true
     },
     "selfKeyword.declaration": {
-      "foreground": "#E6E2D6",
+      "foreground": "#E3E0D9",
       "bold": true
     },
     "selfKeyword.declaration.mutable": {
-      "foreground": "#E6E2D6",
+      "foreground": "#E3E0D9",
       "underline": true,
       "bold": true
     },
     "selfKeyword.declaration.public": {
-      "foreground": "#E6E2D6",
+      "foreground": "#E3E0D9",
       "bold": true
     },
     "selfKeyword.public": {
-      "foreground": "#E6E2D6",
+      "foreground": "#E3E0D9",
       "bold": true
     },
     "selfKeyword.mutable": {
-      "foreground": "#E6E2D6",
+      "foreground": "#E3E0D9",
       "underline": true
     },
     "selfKeyword.mutable.reference": {
-      "foreground": "#E6E2D6",
+      "foreground": "#E3E0D9",
       "fontStyle": "bold underline"
     },
     "selfKeyword.reference": {
-      "foreground": "#E6E2D6",
+      "foreground": "#E3E0D9",
       "bold": true
     },
     "selfTypeKeyword": {
@@ -1835,8 +1840,8 @@
       "bold": true
     },
     "type.declaration": {
-      "foreground": "#8BCEFD",
-      "fontStyle": "bold underline"
+      "foreground": "#C2E5FA",
+      "bold": true,
     },
     "typeParameter": {
       "foreground": "#FFCA7A",
