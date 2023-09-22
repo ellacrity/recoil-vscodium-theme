@@ -46,6 +46,22 @@ This extension is available for both VSCodium (without added telemetry) and VSCo
 - [x] VSCodium (distribution of VSCode with telemetry **removed**)
 - [x] VSCode (contains closed-source code with added telemetry)
 
+### Customization
+
+Unfortunately, I cannot cover every use-case and there will inevitably be clashes of colors. I do my best to prevent this, but if you find that there is something you do not like, you can override it in your `settings.json` config file.
+
+To customize and override rules, add the following to your settings file and tweak it as desired:
+
+```jsonc
+"editor.tokenColorCustomizations": {
+  /*
+  ...
+  Add your overrides here
+  ...
+  */
+},
+```
+
 ## Future Goals
 
 - [ ] Continued, iterative development for existing languages

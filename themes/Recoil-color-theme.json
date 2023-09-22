@@ -558,11 +558,11 @@
     "symbolIcon.folderForeground": "#FEF4BD",
     "symbolIcon.keyForeground": "#D8D2C0",
     "symbolIcon.nullForeground": "#E4DCC3",
-    "symbolIcon.numberForeground": "#E0B4FE",
+    "symbolIcon.numberForeground": "#A2F3F6",
     "symbolIcon.objectForeground": "#8BCEFD",
-    "symbolIcon.operatorForeground": "#A2F3F6",
+    "symbolIcon.operatorForeground": "#FFCA7A",
     "symbolIcon.packageForeground": "#F2F1EE",
-    "symbolIcon.referenceForeground": "#D8D2C0",
+    "symbolIcon.referenceForeground": "#FFCA7A",
     "symbolIcon.snippetForeground": "#8BCEFD",
     "symbolIcon.stringForeground": "#A3C95D",
     "symbolIcon.textForeground": "#D8D2C0",
@@ -636,7 +636,19 @@
       }
     },
     {
-      "name": "Yellow Bright (Unset)",
+      "name": "Yellow Bright (Bold)",
+      "scope": [
+        "storage.modifier.local.shell",
+        "keyword.control.flow.python",
+        "keyword.other.crate.rust"
+      ],
+      "settings": {
+        "foreground": "#FDE8AA",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Yellow Bright (None)",
       "scope": [
         "entity.name.tag",
         "keyword.operator.expression",
@@ -699,7 +711,9 @@
         "keyword.control.from.ts",
         "keyword.control.import.python",
         "keyword.other.unit",
-        "keyword.other.unit.percentage"
+        "keyword.other.unit.percentage",
+        "keyword.control.conditional.zig",
+        "keyword.storage.zig"
       ],
       "settings": {
         "foreground": "#FDE8AA",
@@ -707,20 +721,7 @@
       }
     },
     {
-      "name": "Yellow Bright (Bold)",
-      "scope": [
-        "storage.modifier.local.shell",
-        "keyword.control.flow.python",
-        "keyword.other.crate.rust",
-        "keyword.storage.zig"
-      ],
-      "settings": {
-        "foreground": "#FDE8AA",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Tan (Unset)",
+      "name": "Tan (None)",
       "scope": [
         "variable.parameter.function.language.python",
         "meta.function-call.arguments.python"
@@ -731,7 +732,7 @@
       }
     },
     {
-      "name": "Teal (Normal)",
+      "name": "Teal (Passthrough)",
       "scope": [
         "variable.other.assignment.go",
         "variable.other.assignment.shell",
@@ -774,14 +775,11 @@
       }
     },
     {
-      "name": "Teal (Unset)",
+      "name": "Teal (None)",
       "scope": [
-        "keyword.control.flow.zig",
         "support.type.primitive.ts",
         "keyword.control.asm",
         "keyword.operator.subpattern",
-        "keyword.control.rust",
-        "keyword.control.conditional.zig",
         "keyword.control.trycatch.zig"
       ],
       "settings": {
@@ -790,7 +788,7 @@
       }
     },
     {
-      "name": "Teal Bright (Unset)",
+      "name": "Teal Bright (None)",
       "scope": ["variable.other.enummember"],
       "settings": {
         "foreground": "#A3F5D4",
@@ -798,15 +796,7 @@
       }
     },
     {
-      "name": "Cyan Bright (Bold)",
-      "scope": ["keyword.operator.assignment.equal.rust"],
-      "settings": {
-        "foreground": "#A2F3F6",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Cyan Bright (Unset)",
+      "name": "Cyan Bright (None)",
       "scope": [
         "constant.numeric.json",
         "constant.numeric.json.comments",
@@ -821,7 +811,6 @@
         "constant.numeric.css",
         "keyword.operator.attribute.inner",
         "punctuation.definition.variable.shell",
-        "keyword.operator.arrow.skinny.rust",
         "meta.attribute.rust",
         "constant.numeric.float.zig",
         "constant.numeric.hexfloat.zig"
@@ -832,7 +821,7 @@
       }
     },
     {
-      "name": "Blue (Normal)",
+      "name": "Blue (Passthrough)",
       "scope": [
         "support.class",
         "punctuation.definition.range.diff",
@@ -861,7 +850,7 @@
       }
     },
     {
-      "name": "Blue Bright (Normal)",
+      "name": "Blue Bright (Passthrough)",
       "scope": [
         "custom.punctuation.section.insertion.bracket",
         "variable.other.metavariable.name.rust"
@@ -871,7 +860,7 @@
       }
     },
     {
-      "name": "Cyan (Normal)",
+      "name": "Cyan (Passthrough)",
       "scope": [
         "constant.character.escape",
         "constant.character.escape.go",
@@ -908,7 +897,7 @@
       }
     },
     {
-      "name": "Orange (Normal)",
+      "name": "Orange (Passthrough)",
       "scope": [
         "punctuation.definition.block.sequence.item.yaml",
         "support.type.map.key.scss"
@@ -918,7 +907,7 @@
       }
     },
     {
-      "name": "Orange (Unset)",
+      "name": "Orange (None)",
       "scope": [
         "entity.name.field",
         "entity.name.record.field",
@@ -967,9 +956,8 @@
       "name": "Orange Bright (Bold)",
       "scope": [
         "keyword.operator.borrow.and.rust",
-        "keyword.operator.arithmetic.zig",
-        "keyword.operator.dereference.rust",
-        "keyword.operator.arithmetic.rust"
+        "keyword.operator.assignment.equal.rust",
+        "keyword.operator.bitwise.zig"
       ],
       "settings": {
         "foreground": "#FFCA7A",
@@ -977,7 +965,7 @@
       }
     },
     {
-      "name": "Orange Bright (Unset)",
+      "name": "Orange Bright (None)",
       "scope": [
         "entity.name.tag.toml",
         "entity.name.tag.yaml",
@@ -985,8 +973,12 @@
         "meta.definition.property.ts",
         "meta.field.declaration.ts",
         "variable.object.property.ts",
-        "keyword.operator.bitwise.zig",
-        "variable.other.go"
+        "variable.other.go",
+        "keyword.operator.arithmetic.rust",
+        "keyword.operator.arrow.fat.rust",
+        "keyword.operator.arrow.skinny.rust",
+        "keyword.operator.dereference.rust",
+        "keyword.operator.arithmetic.zig"
       ],
       "settings": {
         "foreground": "#FFCA7A",
@@ -994,7 +986,7 @@
       }
     },
     {
-      "name": "White Dimmed (Unset)",
+      "name": "White Dimmed (None)",
       "scope": [
         "entity.name.function.macro",
         "entity.name.macro",
@@ -1015,7 +1007,7 @@
       }
     },
     {
-      "name": "Green (Normal)",
+      "name": "Green (Passthrough)",
       "scope": [
         "string.quoted.triple.basic.block.toml",
         "keyword.operator.address.go",
@@ -1031,7 +1023,7 @@
       }
     },
     {
-      "name": "Green (Unset)",
+      "name": "Green (None)",
       "scope": [
         "storage.modifier.lifetime.rust",
         "entity.name.lifetime.rust",
@@ -1057,7 +1049,7 @@
       }
     },
     {
-      "name": "Green Bright (Normal)",
+      "name": "Green Bright (Passthrough)",
       "scope": [
         "constant.other.caps.rust",
         "variable.other.constant.rust",
@@ -1083,14 +1075,14 @@
       }
     },
     {
-      "name": "Red (Normal)",
+      "name": "Red (Passthrough)",
       "scope": ["invalid.illegal.line-too-long.git-commit"],
       "settings": {
         "foreground": "#FC8DA8"
       }
     },
     {
-      "name": "Pink (Normal)",
+      "name": "Pink (Passthrough)",
       "scope": [
         "string.unquoted.argument.shell",
         "entity.other.inherited-class.python",
@@ -1101,7 +1093,7 @@
       }
     },
     {
-      "name": "Pink (Unset)",
+      "name": "Pink (None)",
       "scope": [
         "entity.name.type.primitive.rust",
         "punctuation.definition.attribute.rust",
@@ -1130,7 +1122,7 @@
       }
     },
     {
-      "name": "Pink Bright (Normal)",
+      "name": "Pink Bright (Passthrough)",
       "scope": [
         "entity.name.type.trait.rust",
         "variable.other.normal.shell",
@@ -1141,7 +1133,7 @@
       }
     },
     {
-      "name": "Pink Bright (Unset)",
+      "name": "Pink Bright (None)",
       "scope": ["support.function.go"],
       "settings": {
         "foreground": "#FECDEE",
@@ -1149,7 +1141,7 @@
       }
     },
     {
-      "name": "Purple Bright (Unset)",
+      "name": "Purple Bright (None)",
       "scope": [
         "punctuation.definition.markdown",
         "punctuation.definition.heading.markdown",
@@ -1208,7 +1200,9 @@
         "punctuation.definition.directive.c",
         "keyword.control.async.zig",
         "keyword.constant.default.zig",
-        "keyword.type.integer.zig"
+        "keyword.type.integer.zig",
+        "keyword.control.rust",
+        "keyword.control.flow.zig"
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1257,7 +1251,7 @@
       }
     },
     {
-      "name": "Purple (Unset)",
+      "name": "Purple (None)",
       "scope": [
         "punctuation.definition.from-file.diff",
         "punctuation.definition.to-file.diff",
@@ -1285,7 +1279,7 @@
       }
     },
     {
-      "name": "Bright Black (Unset)",
+      "name": "Bright Black (None)",
       "scope": [
         "comment.line.documentation",
         "comment.block.documentation",
@@ -1297,19 +1291,15 @@
       }
     },
     {
-      "name": "Black Bright (Normal)",
-      "scope": [
-        "punctuation.brackets.angle.rust",
-        "keyword.operator.namespace.rust"
-      ],
+      "name": "Black Bright (Passthrough)",
+      "scope": ["punctuation.brackets.angle.rust"],
       "settings": {
         "foreground": "#B3BDC7"
       }
     },
     {
-      "name": "Black (Unset)",
+      "name": "Black (None)",
       "scope": [
-        "keyword.operator.namespace.rust",
         "entity.name.function.decorator",
         "punctuation.brackets.attribute",
         "punctuation.definition.annotation",
@@ -1323,7 +1313,6 @@
         "meta.structure.dictionary.json.comments",
         "source.json.comments",
         "punctuation.brackets.square.rust",
-        "keyword.operator.arrow.skinny.rust",
         "constant.other.ellipsis.python",
         "comment.line"
       ],
@@ -1367,7 +1356,7 @@
       }
     },
     {
-      "name": "Unsafe (Normal)",
+      "name": "Unsafe (Passthrough)",
       "scope": ["meta.function-call.unsafe"],
       "settings": {
         "foreground": "#FD7C68"
@@ -1376,8 +1365,6 @@
     {
       "name": "White (Bold)",
       "scope": [
-        // "keyword.operator",
-        "punctuation",
         "punctuation.semi.rust",
         "punctuation.separator.dictionary.pair.json.comments",
         "variable.language.this.ts",
@@ -1389,7 +1376,7 @@
       }
     },
     {
-      "name": "White (Unset)",
+      "name": "White (None)",
       "scope": [
         "entity.other.attribute-name.class",
         "entity.other.attribute-name.id",
@@ -1404,7 +1391,7 @@
       }
     },
     {
-      "name": "Transparent (Unset)",
+      "name": "Transparent (None)",
       "scope": [
         "variable.other.rust",
         "meta.method.declaration.ts",
@@ -1527,6 +1514,7 @@
     "boolean.injected": {
       "foreground": "#E0B4FE"
     },
+    "attributeBracket": "#FEB4D8",
     "decorator": {
       "foreground": "#E0B4FE",
       "bold": false
@@ -1536,7 +1524,7 @@
       "bold": false
     },
     "derive": {
-      "foreground": "#E4E2C8"
+      "foreground": "#FEB4D8"
     },
     "derive.attribute": {
       "bold": true
@@ -1634,17 +1622,17 @@
     },
     "interface.declaration": {
       "foreground": "#FEB4D8",
-      "underline": true
+      "underline": false
     },
     "interface.public.declaration": {
       "foreground": "#FEB4D8",
       "bold": true,
-      "underline": true
+      "underline": false
     },
     "interface.declaration.unsafe": {
       "foreground": "#FD7C68",
       "bold": true,
-      "underline": true
+      "underline": false
     },
     "interface.library": {
       "foreground": "#FEB4D8",
@@ -1666,7 +1654,7 @@
     "interface.public": {
       "foreground": "#FEB4D8",
       "bold": true,
-      "underline": true
+      "underline": false
     },
     "method": {
       "foreground": "#6BFAF0"
@@ -1890,8 +1878,8 @@
       "bold": true,
       "underline": false
     },
-    "namespace.defaultLibrary.crateRoot": {
-      "foreground": "#3BF7B8",
+    "namespace.crateRoot.defaultLibrary": {
+      "foreground": "#F2F1EE",
       "bold": true,
       "underline": false
     },
@@ -1937,6 +1925,10 @@
     "operator": {
       "foreground": "#FFCA7A",
       "bold": false
+    },
+    "operator.injected": {
+      "foreground": "#8F99A3",
+      "bold": true
     },
     "operator.controlFlow": {
       "foreground": "#FEB4D8",

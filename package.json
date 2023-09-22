@@ -1,6 +1,6 @@
 {
   "name": "recoil",
-  "version": "0.6.15",
+  "version": "0.7.1",
   "displayName": "Recoil",
   "description": "Dark color theme for modern systems languages such as Rust and Zig",
   "license": "MIT",
@@ -35,18 +35,24 @@
     "vscode": "^1.73.0"
   },
   "scripts": {
+    "build": "npx vsce-build",
     "publish": "npx ovsx publish --pat $OPEN_VSX_TOKEN",
     "vsce-build": "npx vsce package",
-    "publish-all": "npm run vsce-publish && npm run ovsx-publish",
-    "vsce-publish": "npx vsce publish --pat $VS_MARKETPLACE_TOKEN",
-    "ovsx-publish": "npx ovsx publish --pat $OPEN_VSX_TOKEN"
+    "publish-all": "npm run publish:ovsx; npm run publish:vsce",
+    "publish:vsce": "npx vsce publish --pat $VS_MARKETPLACE_TOKEN",
+    "publish:ovsx": "npx ovsx publish --pat $OPEN_VSX_TOKEN"
   },
   "contributes": {
     "themes": [
       {
         "label": "Recoil",
         "uiTheme": "vs-dark",
-        "path": "/themes/Recoil-color-theme.json"
+        "path": "./themes/Recoil-color-theme.json"
+      },
+      {
+        "label": "Recoil - Vivid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Recoil-vivid-color-theme.json"
       }
     ]
   }

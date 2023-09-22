@@ -2,6 +2,26 @@
 
 All notable changes to the "recoil" extension will be documented in this file.
 
+## [0.7.1] - 2023-09-22
+
+### Added
+
+- Added a new section to the README document to tell users how to override colors.
+
+### Fixed
+
+- Colors are now more consistent across languages with keyword specialization that should cover most cases.
+
+### Removed
+
+- Removed the theme variant "Vivid" (for now). I would like to add more themes, but I cannot due to time constraints.
+
+## [0.7.0] - 2023-09-22
+
+### Added
+
+- Added the new theme variant "Vivid"
+
 ## [0.6.15] - 2023-09-21
 
 This release is cummulative; mostly backlog that is being finally published.
