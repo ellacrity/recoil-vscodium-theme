@@ -24,6 +24,9 @@ The following languages and serialization formats are supported:
 
 If you find that something is missing, or inconsistent, please feel free to open an issue so we can address it as quickly as possible. Thanks!
 
+## Development Status
+
+This project is currently under **active development**.
 
 ### Should I use This?
 
@@ -34,14 +37,14 @@ However, I do not guarantee support outside of the list of supported languages.
 
 **TL;DR**: If you do not work with the languages listed above, then this extension is probably not for you! And that is okay! Also, if you would like to see a language added and don't mind helping out, I would absolutely love contributions!!
 
-## Development Status
+### Availability
 
-This project is currently under **active development**.
+This extension is available for both VSCodium and VSCode. It is published to both extension registries and should be easy to install. Simply install it as you would any other extension.
 
-### Registries
+This extension is available for both VSCodium (without added telemetry) and VSCode, with the former prioritized as that is the editor I personally use.
 
-This extension is available for both VSCodium and VSCode. It is published to both extension
-registries and should be easy to install. Simply install it as you would any other extension.
+- [x] VSCodium (distribution of VSCode with telemetry **removed**)
+- [x] VSCode (contains closed-source code with added telemetry)
 
 ## Future Goals
 

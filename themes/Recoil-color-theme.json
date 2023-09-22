@@ -66,35 +66,35 @@
     "editorGutter.background": "#25293640",
     "editorGutter.deletedBackground": "#D58485",
     "editorGutter.modifiedBackground": "#8BCEFD",
-    "editorIndentGuide.background1": "#BABABABF",
-    "editorIndentGuide.background2": "#BA90ECBF",
-    "editorIndentGuide.background3": "#90EC6EBF",
-    "editorIndentGuide.background4": "#BABABABF",
-    "editorIndentGuide.background5": "#F7AB6EBF",
-    "editorIndentGuide.background6": "#6EECF7BF",
-    "editorIndentGuide.activeBackground1": "#BABABA80",
-    "editorIndentGuide.activeBackground2": "#BA90EC80",
-    "editorIndentGuide.activeBackground3": "#90EC6E80",
-    "editorIndentGuide.activeBackground4": "#BABABA80",
-    "editorIndentGuide.activeBackground5": "#F7AB6E80",
-    "editorIndentGuide.activeBackground6": "#6EECF780",
+    "editorIndentGuide.activeBackground1": "#BABABAD8",
+    "editorIndentGuide.activeBackground2": "#BA90ECD8",
+    "editorIndentGuide.activeBackground3": "#A3F5D4D8",
+    "editorIndentGuide.activeBackground4": "#BABABAD8",
+    "editorIndentGuide.activeBackground5": "#F7AB6ED8",
+    "editorIndentGuide.activeBackground6": "#6EECF7D8",
+    "editorIndentGuide.background1": "#BABABA99",
+    "editorIndentGuide.background2": "#BA90EC99",
+    "editorIndentGuide.background3": "#A3F5D499",
+    "editorIndentGuide.background4": "#BABABA99",
+    "editorIndentGuide.background5": "#F7AB6E99",
+    "editorIndentGuide.background6": "#6EECF799",
     "editorBracketMatch.border": "#FDE8AA80",
     "editorBracketMatch.background": "#050D14",
     "editorBracketHighlight.foreground1": "#BABABA",
     "editorBracketHighlight.foreground2": "#BA90EC",
-    "editorBracketHighlight.foreground3": "#90EC6E",
+    "editorBracketHighlight.foreground3": "#A3F5D4",
     "editorBracketHighlight.foreground4": "#BABABA",
     "editorBracketHighlight.foreground5": "#F7AB6E",
     "editorBracketHighlight.foreground6": "#6EECF7",
     "editorBracketPairGuide.activeBackground1": "#BABABA80",
     "editorBracketPairGuide.activeBackground2": "#BA90EC80",
-    "editorBracketPairGuide.activeBackground3": "#90EC6E80",
+    "editorBracketPairGuide.activeBackground3": "#A3F5D480",
     "editorBracketPairGuide.activeBackground4": "#BABABA80",
     "editorBracketPairGuide.activeBackground5": "#F7AB6E80",
     "editorBracketPairGuide.activeBackground6": "#6EECF780",
     "editorBracketPairGuide.background1": "#BABABA40",
     "editorBracketPairGuide.background2": "#BA90EC40",
-    "editorBracketPairGuide.background3": "#90EC6E40",
+    "editorBracketPairGuide.background3": "#A3F5D440",
     "editorBracketPairGuide.background4": "#BABABA40",
     "editorBracketPairGuide.background5": "#F7AB6E40",
     "editorBracketPairGuide.background6": "#6EECF740",
@@ -239,7 +239,6 @@
     "banner.background": "#252936",
     "banner.foreground": "#D8D2C0",
     "banner.iconForeground": "#8BCEFD",
-    //# breadcrumb
     "breadcrumb.background": "#34415640",
     "breadcrumb.foreground": "#D8D2C0",
     "breadcrumb.activeSelectionForeground": "#E4E2C8",
@@ -304,9 +303,7 @@
     "dropdown.background": "#3C3C3C",
     "editorCodeLens.foreground": "#9DA7B1",
     "editorCommentsWidget.rangeActiveBackground": "#8F99A320",
-    "editorCommentsWidget.rangeActiveBorder": "#8F99A360",
     "editorCommentsWidget.rangeBackground": "#8F99A320",
-    "editorCommentsWidget.rangeBorder": "#8F99A360",
     "editorCommentsWidget.resolvedBorder": "#D8D2C080",
     "editorCommentsWidget.unresolvedBorder": "#FC8DA8",
     "editorGhostText.foreground": "#808080",
@@ -552,7 +549,6 @@
     "statusBarItem.remoteForeground": "#1C2630",
     "statusBarItem.warningBackground": "#A45A24",
     "statusBarItem.warningForeground": "#F2F1EE",
-    //# symbol icons
     "symbolIcon.arrayForeground": "#FBA94B",
     "symbolIcon.booleanForeground": "#E0B4FE",
     "symbolIcon.colorForeground": "#FBCFE8",
@@ -574,7 +570,7 @@
     "symbolIcon.classForeground": "#8BCEFD",
     "symbolIcon.constantForeground": "#ABF282",
     "symbolIcon.enumeratorForeground": "#3BF7B8",
-    "symbolIcon.enumeratorMemberForeground": "#90FEC3",
+    "symbolIcon.enumeratorMemberForeground": "#A3F5D4",
     "symbolIcon.fieldForeground": "#FBA94B",
     "symbolIcon.functionForeground": "#FECDEE",
     "symbolIcon.interfaceForeground": "#FEB4D8",
@@ -586,7 +582,6 @@
     "symbolIcon.structForeground": "#8BCEFD",
     "symbolIcon.typeParameterForeground": "#FFCA7A",
     "symbolIcon.variableForeground": "#D8D2C0",
-    //# terminal
     "terminal.findMatchHighlightBorder": "#FBA94BCC",
     "terminal.findMatchBackground": "#112821",
     "terminal.findMatchHighlightBackground": "#112821",
@@ -666,9 +661,7 @@
         "storage.type.struct",
         "storage.type.ts",
         "storage.type.type",
-        "keyword.storage.zig",
         "keyword.default.zig",
-        "keyword.control.conditional.zig",
         "keyword.control.loop.js",
         "keyword.control.conditional.js",
         "keyword.control.repeat.zig",
@@ -718,7 +711,8 @@
       "scope": [
         "storage.modifier.local.shell",
         "keyword.control.flow.python",
-        "keyword.other.crate.rust"
+        "keyword.other.crate.rust",
+        "keyword.storage.zig"
       ],
       "settings": {
         "foreground": "#FDE8AA",
@@ -748,14 +742,10 @@
         "entity.other.attribute-name.pseudo-element.css",
         "keyword.control.trycatch.js",
         "keyword.control.trycatch.ts",
-        "keyword.statement.zig",
         "entity.name.tag.wildcard.scss",
         "meta.block.ts",
         "entity.other.attribute-name.class",
-        "entity.other.attribute-name.pseudo-element.css",
-        "keyword.control.trycatch.zig",
-        "keyword.operator.bitwise.zig",
-        "keyword.type.zig"
+        "entity.other.attribute-name.pseudo-element.css"
       ],
       "settings": {
         "foreground": "#3BF7B8"
@@ -774,7 +764,9 @@
         "keyword.operator.address.go",
         "keyword.operator.macro.dollar.rust",
         "keyword.control.flow.block-scalar.literal.yaml",
-        "punctuation.definition.keyword.scss"
+        "punctuation.definition.keyword.scss",
+        "keyword.control.directive.include.cpp",
+        "keyword.control.directive.include.c"
       ],
       "settings": {
         "foreground": "#3BF7B8",
@@ -787,7 +779,10 @@
         "keyword.control.flow.zig",
         "support.type.primitive.ts",
         "keyword.control.asm",
-        "keyword.operator.subpattern"
+        "keyword.operator.subpattern",
+        "keyword.control.rust",
+        "keyword.control.conditional.zig",
+        "keyword.control.trycatch.zig"
       ],
       "settings": {
         "foreground": "#3BF7B8",
@@ -795,20 +790,16 @@
       }
     },
     {
-      "name": "Teal Bright (Normal)",
-      "scope": [
-        "variable.other.enummember",
-        "variable.other.go"
-      ],
+      "name": "Teal Bright (Unset)",
+      "scope": ["variable.other.enummember"],
       "settings": {
-        "foreground": "#90FEC3"
+        "foreground": "#A3F5D4",
+        "fontStyle": ""
       }
     },
     {
       "name": "Cyan Bright (Bold)",
-      "scope": [
-        "keyword.operator.assignment.equal.rust"
-      ],
+      "scope": ["keyword.operator.assignment.equal.rust"],
       "settings": {
         "foreground": "#A2F3F6",
         "fontStyle": "bold"
@@ -847,7 +838,8 @@
         "punctuation.definition.range.diff",
         "meta.diff.range",
         "keyword.control.each.scss",
-        "variable.other.constant.object.js"
+        "variable.other.constant.object.js",
+        "entity.name.type.rust"
       ],
       "settings": {
         "foreground": "#8BCEFD"
@@ -861,6 +853,7 @@
         "entity.name.type.zig",
         "meta.type.declaration.ts",
         "support.function.misc.scss",
+        "keyword.statement.zig"
       ],
       "settings": {
         "foreground": "#8BCEFD",
@@ -947,7 +940,7 @@
         "string.unquoted.block.yaml",
         "constant.other.placeholder",
         "meta.interpolation.rust",
-        "punctuation.definition.template-expression",
+        "punctuation.definition.template-expression"
       ],
       "settings": {
         "foreground": "#FBA94B",
@@ -956,9 +949,7 @@
     },
     {
       "name": "Orange (Bold)",
-      "scope": [
-        "meta.parameter-expansion"
-      ],
+      "scope": ["meta.parameter-expansion"],
       "settings": {
         "foreground": "#FBA94B",
         "fontStyle": "bold"
@@ -966,9 +957,7 @@
     },
     {
       "name": "Orange Bright (Bold Underline)",
-      "scope": [
-        "support.type.property-name.table.toml"
-      ],
+      "scope": ["support.type.property-name.table.toml"],
       "settings": {
         "foreground": "#FFCA7A",
         "fontStyle": "bold underline"
@@ -981,8 +970,6 @@
         "keyword.operator.arithmetic.zig",
         "keyword.operator.dereference.rust",
         "keyword.operator.arithmetic.rust"
-        // TODO: Check if our config works, and if not, uncomment following line
-        // "keyword.operator.rust"
       ],
       "settings": {
         "foreground": "#FFCA7A",
@@ -997,7 +984,9 @@
         "markup.changed",
         "meta.definition.property.ts",
         "meta.field.declaration.ts",
-        "variable.object.property.ts"
+        "variable.object.property.ts",
+        "keyword.operator.bitwise.zig",
+        "variable.other.go"
       ],
       "settings": {
         "foreground": "#FFCA7A",
@@ -1034,7 +1023,8 @@
         "string.quoted.single",
         "string.quoted.docstring.multi.python",
         "constant.other.color.rgb-value.hex.css",
-        "meta.property-value.scss"
+        "meta.property-value.scss",
+        "string.quoted.other.lt-gt.include.c"
       ],
       "settings": {
         "foreground": "#A3C95D"
@@ -1094,9 +1084,7 @@
     },
     {
       "name": "Red (Normal)",
-      "scope": [
-        "invalid.illegal.line-too-long.git-commit"
-      ],
+      "scope": ["invalid.illegal.line-too-long.git-commit"],
       "settings": {
         "foreground": "#FC8DA8"
       }
@@ -1154,9 +1142,7 @@
     },
     {
       "name": "Pink Bright (Unset)",
-      "scope": [
-        "support.function.go"
-      ],
+      "scope": ["support.function.go"],
       "settings": {
         "foreground": "#FECDEE",
         "fontStyle": ""
@@ -1218,7 +1204,11 @@
         "variable.other.metavariable.specifier",
         "entity.name.type.numeric",
         "keyword.control.import.ts",
-        "custom.variable.other.normal.numeric"
+        "custom.variable.other.normal.numeric",
+        "punctuation.definition.directive.c",
+        "keyword.control.async.zig",
+        "keyword.constant.default.zig",
+        "keyword.type.integer.zig"
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1238,9 +1228,7 @@
         "constant.language.boolean",
         "constant.language.json",
         "constant.language.boolean",
-        "keyword.constant.bool.zig",
-        "keyword.constant.default.zig",
-        "keyword.type.integer.zig",
+        "keyword.constant.bool.zig"
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1262,10 +1250,7 @@
     },
     {
       "name": "Purple Bright (Underline)",
-      "scope": [
-        "support.function.builtin.zig",
-        "entity.name.function.macro.rust"
-      ],
+      "scope": ["support.function.builtin.zig", "entity.name.function.macro.rust"],
       "settings": {
         "foreground": "#E0B4FE",
         "fontStyle": "underline"
@@ -1275,7 +1260,8 @@
       "name": "Purple (Unset)",
       "scope": [
         "punctuation.definition.from-file.diff",
-        "punctuation.definition.to-file.diff"
+        "punctuation.definition.to-file.diff",
+        "keyword.type.zig"
       ],
       "settings": {
         "foreground": "#C69EFA",
@@ -1374,9 +1360,7 @@
     },
     {
       "name": "Unsafe (Underline)",
-      "scope": [
-        "keyword.other.unsafe"
-      ],
+      "scope": ["keyword.other.unsafe"],
       "settings": {
         "foreground": "#FD7C68",
         "fontStyle": "underline"
@@ -1384,9 +1368,7 @@
     },
     {
       "name": "Unsafe (Normal)",
-      "scope": [
-        "meta.function-call.unsafe"
-      ],
+      "scope": ["meta.function-call.unsafe"],
       "settings": {
         "foreground": "#FD7C68"
       }
@@ -1447,9 +1429,7 @@
     },
     {
       "name": "Transparent (Italic)",
-      "scope": [
-        "markup.italic"
-      ],
+      "scope": ["markup.italic"],
       "settings": {
         "fontStyle": ""
       }
@@ -1469,9 +1449,7 @@
     },
     {
       "name": "Transparent (Underline)",
-      "scope": [
-        "meta.mutable"
-      ],
+      "scope": ["meta.mutable"],
       "settings": {
         "fontStyle": "underline"
       }
@@ -1482,9 +1460,20 @@
   Coloring for semantic tokens
   */
   "semanticTokenColors": {
+    "class.globalScope": {
+      "bold": true,
+      "underline": true
+    },
+    "label": {
+      "foreground": "#E0B4FE",
+      "fontStyle": ""
+    },
+    "keywordLiteral": {
+      "bold": false
+    },
     "type": {
       "foreground": "#FEB4D8",
-      "bold": false,
+      "bold": false
     },
     "number.attribute": {
       "foreground": "#A2F3F6",
@@ -1493,14 +1482,6 @@
     "number.injected": {
       "foreground": "#A2F3F6",
       "fontStyle": ""
-    },
-    "parameter.consuming": {
-      "foreground": "#D8D2C0",
-      "bold": false
-    },
-    "parameter.callable": {
-      "foreground": "#E0B4FE",
-      "bold": false
     },
     "variable.callable": {
       "foreground": "#E0B4FE",
@@ -1517,7 +1498,6 @@
     "generic.injected": {
       "foreground": "#D8D2C0"
     },
-    //# keywords
     "keyword.crateRoot": {
       "bold": true,
       "italic": false
@@ -1574,22 +1554,42 @@
       "foreground": "#E4E2C8",
       "bold": true
     },
-    "string": {
-      "foreground": "#A3C95D",
-      "italic": false
-    },
     "string.injected": {
       "foreground": "#A3C95D",
-      "italic": false
+      "fontStyle": ""
     },
     "parameter": {
-      "foreground": "#D8D2C0"
+      "foreground": "#E2E8EE"
+    },
+    "parameter.injected": {
+      "foreground": "#E2E8EE"
+    },
+    "parameter.callable": {
+      "foreground": "#E3BAF7",
+      "bold": false
+    },
+    "parameter.callable.declaration": {
+      "foreground": "#E3BAF7",
+      "bold": true
+    },
+    "parameter.declaration": {
+      "foreground": "#E2E8EE",
+      "bold": false
+    },
+    "parameter.functionScope": {
+      "bold": true,
+      "underline": true,
+      "foreground": "#E2E8EE"
     },
     "parameter.reference": {
-      "foreground": "#D8D2C0"
+      "foreground": "#E2E8EE"
+    },
+    "parameter.consuming": {
+      "foreground": "#D8D2C0",
+      "bold": false
     },
     "constParameter": {
-      "foreground": "#A4F870",
+      "foreground": "#ABF282",
       "bold": true
     },
     "constParameter.declaration": {
@@ -1602,13 +1602,13 @@
       "bold": true
     },
     "constParameter.injected": {
-      "foreground": "#FFCA7A"
+      "foreground": "#ABF282"
     },
     "function": {
-      "foreground": "#6BFAF0",
+      "foreground": "#6BFAF0"
     },
     "function.declaration": {
-      "bold": true,
+      "bold": true
     },
     "function.unsafe": {
       "foreground": "#FD7C68"
@@ -1616,7 +1616,6 @@
     "function.unsafe.injected": {
       "foreground": "#FD7C68"
     },
-    //# class
     "class": {
       "foreground": "#8BCEFD"
     },
@@ -1628,10 +1627,8 @@
     },
     "errorTag": {
       "foreground": "#FFCA7A",
-      "bold": false,
+      "bold": false
     },
-    //# variable
-    //# trait (interface)
     "interface": {
       "foreground": "#FEB4D8"
     },
@@ -1671,7 +1668,6 @@
       "bold": true,
       "underline": true
     },
-    //# method
     "method": {
       "foreground": "#6BFAF0"
     },
@@ -1810,7 +1806,8 @@
       "foreground": "#8BCEFD"
     },
     "struct.declaration": {
-      "underline": true
+      "bold": true,
+      "underline": false
     },
     "struct.public.declaration": {
       "foreground": "#8BCEFD",
@@ -1841,7 +1838,7 @@
     },
     "type.declaration": {
       "foreground": "#C2E5FA",
-      "bold": true,
+      "bold": true
     },
     "typeParameter": {
       "foreground": "#FFCA7A",
@@ -1871,7 +1868,6 @@
       "foreground": "#FFCA7A",
       "bold": true
     },
-    //# namespace (imports)
     "namespace": {
       "foreground": "#E4E2C8",
       "bold": true
@@ -1885,20 +1881,19 @@
       "foreground": "#E4E2C8",
       "bold": true
     },
-    "namespace.defaultLibrary": {
-      "foreground": "#E4E2C8",
-      "bold": true
-    },
-    //# namespace (root of crate)
     "namespace.crateRoot": {
-      "foreground": "#F2F1EE",
+      "foreground": "#E4E2C8",
       "bold": true,
-      "italic": false
+      "underline": false
     },
-    "namespace.crateRoot.defaultLibrary": {
-      "foreground": "#F2F1EE",
+    "namespace.defaultLibrary": {
       "bold": true,
-      "underline": true
+      "underline": false
+    },
+    "namespace.defaultLibrary.crateRoot": {
+      "foreground": "#3BF7B8",
+      "bold": true,
+      "underline": false
     },
     "namespace.crateRoot.injected": {
       "foreground": "#F2F1EE",
@@ -1940,8 +1935,8 @@
       "bold": false
     },
     "operator": {
-      "foreground": "#C2E5FA",
-      "bold": true
+      "foreground": "#FFCA7A",
+      "bold": false
     },
     "operator.controlFlow": {
       "foreground": "#FEB4D8",
@@ -1978,22 +1973,22 @@
       "foreground": "#3BF7B8"
     },
     "enumMember": {
-      "foreground": "#90FEC3"
+      "foreground": "#A3F5D4"
     },
     "enumMember.declaration": {
-      "foreground": "#90FEC3",
+      "foreground": "#A3F5D4",
       "fontStyle": ""
     },
     "enumMember.public": {
-      "foreground": "#90FEC3",
+      "foreground": "#A3F5D4",
       "fontStyle": ""
     },
     "enumMember.declaration.public": {
-      "foreground": "#90FEC3",
+      "foreground": "#A3F5D4",
       "fontStyle": ""
     },
     "enumMember.injected": {
-      "foreground": "#90FEC3"
+      "foreground": "#A3F5D4"
     },
     "parameter.defaultLibrary": {
       "bold": false

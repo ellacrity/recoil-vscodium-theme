@@ -2,6 +2,21 @@
 
 All notable changes to the "recoil" extension will be documented in this file.
 
+## [0.6.15] - 2023-09-21
+
+This release is cummulative; mostly backlog that is being finally published.
+
+### Added
+
+- More Zig code is supported via semantic tokens and TextMate rules
+
+### Changed
+
+- Modified control flow keywords in Rust to make them stand out more
+- Changed Zig's palette to more accurately reflect semantic meaning
+  - **NOTE**: I just started learning Zig, so please bear with me as I continue to experiment and then push changes to `main` + publish. I typically make small changes as I go, saving to my local settings. After a while, I batch update this theme. If you want to help, you are more than welcome to!
+- Changed some colors regarding control flow in Zig
+
 ## [0.6.8] - 2023-09-15
 
 ### Fixed
