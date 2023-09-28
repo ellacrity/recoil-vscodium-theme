@@ -35,3 +35,6 @@ resources/
 colour
 !/assets
 /examples
+
+/zig-cache
+/zig-out

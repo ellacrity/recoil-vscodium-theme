@@ -2,6 +2,25 @@
 
 All notable changes to the "recoil" extension will be documented in this file.
 
+## [0.8.0] - Unreleased
+
+### Added
+
+- Automation tooling to remove duplicate entries and accidental overriding
+  - The theme file is read from top to bottom, with rules at the bottom overriding whatever has been set above
+- MVP algorithm for parsing, sorting and validating the color scheme
+
+### Changed
+
+- Theme is now modified with a CLI tool to make it easier to insert new entries, make modifications, and more without having to worry about breaking the color palette.
+
+## [0.7.2] - 2023-09-27
+
+### Added
+
+- More semantic tokens and colors are available for Zig
+- Added color palette/theme variants
+
 ## [0.7.1] - 2023-09-22
 
 ### Added

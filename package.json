@@ -1,6 +1,6 @@
 {
   "name": "recoil",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "displayName": "Recoil",
   "description": "Dark color theme for modern systems languages such as Rust and Zig",
   "license": "MIT",
@@ -48,11 +48,6 @@
         "label": "Recoil",
         "uiTheme": "vs-dark",
         "path": "./themes/Recoil-color-theme.json"
-      },
-      {
-        "label": "Recoil - Vivid",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Recoil-vivid-color-theme.json"
       }
     ]
   }

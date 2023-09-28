@@ -207,7 +207,7 @@
     "statusBar.noFolderBackground": "#050D14",
     /* Terminal Color Palette */
     "terminal.ansiBlack": "#8F99A3",
-    "terminal.ansiBlue": "#9BC4FD",
+    "terminal.ansiBlue": "#8BCEFD",
     "terminal.ansiCyan": "#6BFAF0",
     "terminal.ansiGreen": "#3BF7B8",
     "terminal.ansiMagenta": "#C69EFA",
@@ -625,6 +625,13 @@
   },
   "tokenColors": [
     {
+      "name": "Yellow (Passthrough)",
+      "scope": ["support.type.map.key.scss"],
+      "settings": {
+        "foreground": "#F3D87F"
+      }
+    },
+    {
       "name": "Yellow (Bold)",
       "scope": [
         "variable.language.super.rust",
@@ -648,7 +655,7 @@
       }
     },
     {
-      "name": "Yellow Bright (None)",
+      "name": "Yellow Bright (Reset)",
       "scope": [
         "entity.name.tag",
         "keyword.operator.expression",
@@ -721,7 +728,7 @@
       }
     },
     {
-      "name": "Tan (None)",
+      "name": "Tan (Reset)",
       "scope": [
         "variable.parameter.function.language.python",
         "meta.function-call.arguments.python"
@@ -740,13 +747,11 @@
         "meta.class.inheritance.python",
         "meta.function.python",
         "meta.item-access.python",
-        "entity.other.attribute-name.pseudo-element.css",
         "keyword.control.trycatch.js",
         "keyword.control.trycatch.ts",
         "entity.name.tag.wildcard.scss",
         "meta.block.ts",
-        "entity.other.attribute-name.class",
-        "entity.other.attribute-name.pseudo-element.css"
+        "entity.other.attribute-name.class"
       ],
       "settings": {
         "foreground": "#3BF7B8"
@@ -775,12 +780,13 @@
       }
     },
     {
-      "name": "Teal (None)",
+      "name": "Teal (Reset)",
       "scope": [
         "support.type.primitive.ts",
         "keyword.control.asm",
         "keyword.operator.subpattern",
-        "keyword.control.trycatch.zig"
+        "keyword.control.trycatch.zig",
+        "keyword.type.zig"
       ],
       "settings": {
         "foreground": "#3BF7B8",
@@ -788,7 +794,7 @@
       }
     },
     {
-      "name": "Teal Bright (None)",
+      "name": "Teal Bright (Reset)",
       "scope": ["variable.other.enummember"],
       "settings": {
         "foreground": "#A3F5D4",
@@ -796,7 +802,15 @@
       }
     },
     {
-      "name": "Cyan Bright (None)",
+      "name": "Cyan Bright (Bold)",
+      "scope": ["punctuation.definition.keyword.scss"],
+      "settings": {
+        "foreground": "#A2F3F6",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Cyan Bright (Reset)",
       "scope": [
         "constant.numeric.json",
         "constant.numeric.json.comments",
@@ -826,6 +840,7 @@
         "support.class",
         "punctuation.definition.range.diff",
         "meta.diff.range",
+        "keyword.control.at-rule.use.scss",
         "keyword.control.each.scss",
         "variable.other.constant.object.js",
         "entity.name.type.rust"
@@ -847,6 +862,17 @@
       "settings": {
         "foreground": "#8BCEFD",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Blue (Reset)",
+      "scope": [
+        "entity.name.command.shell",
+        "punctuation.definition.variable.powershell"
+      ],
+      "settings": {
+        "foreground": "#8BCEFD",
+        "fontStyle": ""
       }
     },
     {
@@ -877,6 +903,7 @@
         "string.unquoted.plain.out.yaml",
         "entity.name.function.js",
         "entity.name.function.ts",
+        "support.function.misc.scss",
         "custom.punctuation.section.insertion.dollar.simple",
         "custom.punctuation.section.insertion.dollar.brackets.json"
       ],
@@ -900,14 +927,16 @@
       "name": "Orange (Passthrough)",
       "scope": [
         "punctuation.definition.block.sequence.item.yaml",
-        "support.type.map.key.scss"
+        "support.type.map.key.scss",
+        "variable.other.normal.shell",
+        "variable.other.readwrite.powershell"
       ],
       "settings": {
         "foreground": "#FBA94B"
       }
     },
     {
-      "name": "Orange (None)",
+      "name": "Orange (Reset)",
       "scope": [
         "entity.name.field",
         "entity.name.record.field",
@@ -955,6 +984,7 @@
     {
       "name": "Orange Bright (Bold)",
       "scope": [
+        "variable.other.assignment.shell",
         "keyword.operator.borrow.and.rust",
         "keyword.operator.assignment.equal.rust",
         "keyword.operator.bitwise.zig"
@@ -965,7 +995,7 @@
       }
     },
     {
-      "name": "Orange Bright (None)",
+      "name": "Orange Bright (Reset)",
       "scope": [
         "entity.name.tag.toml",
         "entity.name.tag.yaml",
@@ -986,7 +1016,7 @@
       }
     },
     {
-      "name": "White Dimmed (None)",
+      "name": "Foreground (Reset)",
       "scope": [
         "entity.name.function.macro",
         "entity.name.macro",
@@ -999,7 +1029,9 @@
         "variable.other.metavariable",
         "variable.other.constant.js",
         "punctuation.brackets.round",
-        "punctuation.brackets.angle"
+        "punctuation.brackets.angle",
+        "variable.scss",
+        "punctuation.definition.constant.css"
       ],
       "settings": {
         "foreground": "#D8D2C0",
@@ -1023,7 +1055,7 @@
       }
     },
     {
-      "name": "Green (None)",
+      "name": "Green (Reset)",
       "scope": [
         "storage.modifier.lifetime.rust",
         "entity.name.lifetime.rust",
@@ -1041,11 +1073,35 @@
         "string.quoted.double.json",
         "string.quoted.single.basic.line.toml",
         "string.quoted.double.json.comments",
-        "string.quoted.double.go"
+        "string.quoted.double.go",
+        "string.multiline.zig",
+        "variable.string.zig"
       ],
       "settings": {
         "foreground": "#A3C95D",
         "fontStyle": ""
+      }
+    },
+    {
+      "name": "Green Bright (Bold)",
+      "scope": [
+        "constant.other.caps.go",
+        "variable.other.constant.property.ts",
+        "meta.field.declaration.ts",
+        "constant.language.python",
+        "constant.other.caps.python"
+      ],
+      "settings": {
+        "foreground": "#ABF282",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Green Bright (Underline)",
+      "scope": "support.function.builtin.zig",
+      "settings": {
+        "foreground": "#ABF282",
+        "fontStyle": "underline"
       }
     },
     {
@@ -1060,21 +1116,6 @@
       }
     },
     {
-      "name": "Green Bright (Bold)",
-      "scope": [
-        "constant.other.caps.go",
-        "variable.other.constant.property.ts",
-        "meta.field.declaration.ts",
-        "constant.language.python",
-        "constant.other.caps.python",
-        "punctuation.definition.constant.css"
-      ],
-      "settings": {
-        "foreground": "#ABF282",
-        "fontStyle": "bold"
-      }
-    },
-    {
       "name": "Red (Passthrough)",
       "scope": ["invalid.illegal.line-too-long.git-commit"],
       "settings": {
@@ -1085,15 +1126,14 @@
       "name": "Pink (Passthrough)",
       "scope": [
         "string.unquoted.argument.shell",
-        "entity.other.inherited-class.python",
-        "variable.scss"
+        "entity.other.inherited-class.python"
       ],
       "settings": {
         "foreground": "#FEB4D8"
       }
     },
     {
-      "name": "Pink (None)",
+      "name": "Pink (Reset)",
       "scope": [
         "entity.name.type.primitive.rust",
         "punctuation.definition.attribute.rust",
@@ -1133,7 +1173,14 @@
       }
     },
     {
-      "name": "Pink Bright (None)",
+      "name": "Purple Bright (Passthrough)",
+      "scope": ["entity.other.attribute-name.pseudo-element.css"],
+      "settings": {
+        "foreground": "#E0B4FE"
+      }
+    },
+    {
+      "name": "Pink Bright (Reset)",
       "scope": ["support.function.go"],
       "settings": {
         "foreground": "#FECDEE",
@@ -1141,7 +1188,7 @@
       }
     },
     {
-      "name": "Purple Bright (None)",
+      "name": "Purple Bright (Reset)",
       "scope": [
         "punctuation.definition.markdown",
         "punctuation.definition.heading.markdown",
@@ -1188,8 +1235,6 @@
         "storage.type.rune.go",
         "storage.type.string.go",
         "storage.type.uintptr.go",
-        // TODO: Ensure that removal of this rule does not lead to uncoloured tokens
-        // "keyword.other.unit",
         "variable.other.metavariable.specifier",
         "constant.language.json.comments",
         "entity.name.function.macro",
@@ -1202,7 +1247,8 @@
         "keyword.constant.default.zig",
         "keyword.type.integer.zig",
         "keyword.control.rust",
-        "keyword.control.flow.zig"
+        "keyword.control.flow.zig",
+        "constant.other.option"
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1244,18 +1290,17 @@
     },
     {
       "name": "Purple Bright (Underline)",
-      "scope": ["support.function.builtin.zig", "entity.name.function.macro.rust"],
+      "scope": ["entity.name.function.macro.rust"],
       "settings": {
         "foreground": "#E0B4FE",
         "fontStyle": "underline"
       }
     },
     {
-      "name": "Purple (None)",
+      "name": "Purple (Reset)",
       "scope": [
         "punctuation.definition.from-file.diff",
-        "punctuation.definition.to-file.diff",
-        "keyword.type.zig"
+        "punctuation.definition.to-file.diff"
       ],
       "settings": {
         "foreground": "#C69EFA",
@@ -1279,7 +1324,7 @@
       }
     },
     {
-      "name": "Bright Black (None)",
+      "name": "Bright Black (Reset)",
       "scope": [
         "comment.line.documentation",
         "comment.block.documentation",
@@ -1298,7 +1343,7 @@
       }
     },
     {
-      "name": "Black (None)",
+      "name": "Black (Reset)",
       "scope": [
         "entity.name.function.decorator",
         "punctuation.brackets.attribute",
@@ -1376,7 +1421,7 @@
       }
     },
     {
-      "name": "White (None)",
+      "name": "White (Reset)",
       "scope": [
         "entity.other.attribute-name.class",
         "entity.other.attribute-name.id",
@@ -1391,7 +1436,7 @@
       }
     },
     {
-      "name": "Transparent (None)",
+      "name": "Transparent (Reset)",
       "scope": [
         "variable.other.rust",
         "meta.method.declaration.ts",
@@ -1452,7 +1497,7 @@
       "underline": true
     },
     "label": {
-      "foreground": "#E0B4FE",
+      "foreground": "#ABF282",
       "fontStyle": ""
     },
     "keywordLiteral": {
