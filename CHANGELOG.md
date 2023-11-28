@@ -4,6 +4,10 @@ All notable changes to the "recoil" extension will be documented in this file.
 
 ## [0.8.0] - Unreleased
 
+This represents the set of pending changes that have not yet been implemented, or are still in the works.
+As this project is not my main focus and exists solely so that I have somewhere to store my theme, it is
+not a top priority. With that said, I will try my best to keep it as up-to-date as possible.
+
 ### Added
 
 - Automation tooling to remove duplicate entries and accidental overriding
@@ -13,6 +17,22 @@ All notable changes to the "recoil" extension will be documented in this file.
 ### Changed
 
 - Theme is now modified with a CLI tool to make it easier to insert new entries, make modifications, and more without having to worry about breaking the color palette.
+
+## [0.7.3] - 2023-11-28
+
+This release comprises a set of changes that have been pending for quite a while. I have not had the
+time to sit down and merge these changes with the theme. The theme will now reflect these changes in
+the Open VSIX store for VSCodium and the extension marketplace for VSCode.
+
+### Added
+
+- Add preliminary support for C and C++
+- Added additional surface colors to make tabs and other elements stand out easier (UI/improvements)
+
+### Changed
+
+- Existing theme colors may have been modified slightly since the past release in order to make room
+  for additional languages without risking excessive color clashing.
 
 ## [0.7.2] - 2023-09-27
 

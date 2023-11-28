@@ -39,7 +39,7 @@
     "editor.inactiveSelectionBackground": "#1E293B",
     "editor.inlineValuesBackground": "#FFC80033",
     "editor.inlineValuesForeground": "#F2F1EE80",
-    "editor.lineHighlightBackground": "#0F1C29",
+    "editor.lineHighlightBackground": "#182028",
     "editor.lineHighlightBorder": "#FFB96440",
     "editor.linkedEditingBackground": "#FF00004D",
     "editor.rangeHighlightBackground": "#67E07B22",
@@ -99,11 +99,11 @@
     "editorBracketPairGuide.background5": "#F7AB6E40",
     "editorBracketPairGuide.background6": "#6EECF740",
     "editorInfo.foreground": "#67E07B",
-    "editorInlayHint.background": "#050D14",
+    "editorInlayHint.background": "#182028",
+    "editorInlayHint.typeBackground": "#182028",
+    "editorInlayHint.parameterBackground": "#182028",
     "editorInlayHint.foreground": "#8F99A3",
-    "editorInlayHint.parameterBackground": "#050D14",
     "editorInlayHint.parameterForeground": "#8F99A3",
-    "editorInlayHint.typeBackground": "#050D14",
     "editorInlayHint.typeForeground": "#8F99A3",
     "editorLightBulb.foreground": "#FEF4BD",
     /* current editor line and gutter colors */
@@ -116,23 +116,26 @@
     "editorBracketHighlight.unexpectedBracket.foreground": "#D8D2C0",
     "contrastActiveBorder": "#FDBA3E00",
     /* Tabs */
+    "tab.activeBorder": "#A3C95D",
+    "tab.activeBorderTop": "#A3C95D",
     "tab.activeForeground": "#DADEE2",
+    "tab.border": "#E4E2C880",
     "tab.inactiveForeground": "#B0BCCC",
+    "tab.hoverBackground": "#34415620",
+    "tab.hoverForeground": "#ABF282",
+    "tab.inactiveBackground": "#050D14",
+    "tab.activeBackground": "#182028",
+    "tab.unfocusedActiveBorderTop": "#A3C95D",
     "tab.unfocusedActiveForeground": "#D8D2C0",
     "tab.unfocusedInactiveForeground": "#8F99A3",
-    "tab.activeBackground": "#101620",
-    "tab.inactiveBackground": "#050D14",
     "tab.unfocusedActiveBackground": "#1C2630",
     "tab.unfocusedInactiveBackground": "#050D14",
-    "tab.border": "#808080",
-    "tab.hoverBackground": "#34415620",
-    "tab.activeModifiedBorder": "#8BCEFD",
-    "tab.inactiveModifiedBorder": "#8BCEFD80",
-    "tab.unfocusedActiveModifiedBorder": "#8BCEFD80",
-    "tab.unfocusedInactiveModifiedBorder": "#8BCEFD40",
+    "tab.hoverBorder": "#ABF282",
+    "tab.activeModifiedBorder": "#F39B68",
+    "tab.inactiveModifiedBorder": "#F39B68",
+    "tab.unfocusedActiveModifiedBorder": "#F39B68",
+    "tab.unfocusedInactiveModifiedBorder": "#F39B68",
     "tab.lastPinnedBorder": "#D8D2C0",
-    "tab.unfocusedActiveBorderTop": "#8F99A3",
-    "tab.hoverForeground": "#DADEE2",
     /* Git decoration */
     "gitDecoration.addedResourceForeground": "#94F075",
     "gitDecoration.conflictingResourceForeground": "#E4676B",
@@ -191,7 +194,7 @@
     "peekViewTitleDescription.foreground": "#F4E4CE",
     "peekViewTitleLabel.foreground": "#B3EE53",
     "progressBar.background": "#FBA94B",
-    "scrollbar.shadow": "#10131B88",
+    "scrollbar.shadow": "#E4E2C820",
     "selection.background": "#344156",
     "settings.headerForeground": "#FBA94B",
     "settings.modifiedItemIndicator": "#8BCEFD",
@@ -235,7 +238,8 @@
     "titleBar.activeForeground": "#D8D2C0",
     "titleBar.inactiveBackground": "#1C2630",
     "titleBar.inactiveForeground": "#8F99A3",
-    "widget.shadow": "#10131B80",
+    "titleBar.border": "#FBA94B99",
+    "widget.shadow": "#E4E2C820",
     "banner.background": "#252936",
     "banner.foreground": "#D8D2C0",
     "banner.iconForeground": "#8BCEFD",
@@ -330,7 +334,8 @@
     "editorStickyScroll.background": "#10131B",
     "editorStickyScrollHover.background": "#2A2D2E",
     "focusBorder": "#B3EE53",
-    "titleBar.border": "#FBA94B99",
+    "inlineChat.shadow": "#E4E2C820",
+    /* Editor suggest widget */
     "editorSuggestWidget.border": "#FBA94B99",
     "editorSuggestWidget.focusHighlightForeground": "#B3EE53",
     "editorSuggestWidget.foreground": "#D8D2C0",
@@ -422,7 +427,7 @@
     "listFilterWidget.background": "#1C2630",
     "listFilterWidget.noMatchesOutline": "#BE1100",
     "listFilterWidget.outline": "#8F99A3",
-    "listFilterWidget.shadow": "#8F99A340",
+    "listFilterWidget.shadow": "#E4E2C820",
     "markdown.extension.editor.codeSpan.background": "#10131B00",
     "markdown.extension.editor.codeSpan.border": "#353A48C7",
     "markdown.extension.editor.formattingMark.foreground": "#E3E4E229",
@@ -504,7 +509,6 @@
     "quickInputTitle.background": "#F2F1EE20",
     "rust_analyzer.syntaxTreeBorder": "#DADEE2",
     "sash.hoverBorder": "#353A48",
-    "scm.providerBorder": "#454545",
     "scrollbarSlider.activeBackground": "#BFBFBF66",
     "scrollbarSlider.background": "#79797966",
     "scrollbarSlider.hoverBackground": "#646464B3",
@@ -625,14 +629,14 @@
   },
   "tokenColors": [
     {
-      "name": "Yellow (Passthrough)",
+      "name": "Yellow - Passthrough",
       "scope": ["support.type.map.key.scss"],
       "settings": {
         "foreground": "#F3D87F"
       }
     },
     {
-      "name": "Yellow (Bold)",
+      "name": "Yellow - Bold",
       "scope": [
         "variable.language.super.rust",
         "entity.name.function.macro.rules.rust"
@@ -643,11 +647,12 @@
       }
     },
     {
-      "name": "Yellow Bright (Bold)",
+      "name": "Yellow Bright - Bold",
       "scope": [
         "storage.modifier.local.shell",
         "keyword.control.flow.python",
-        "keyword.other.crate.rust"
+        "keyword.other.crate.rust",
+        "variable.language.special.shell"
       ],
       "settings": {
         "foreground": "#FDE8AA",
@@ -655,7 +660,7 @@
       }
     },
     {
-      "name": "Yellow Bright (Reset)",
+      "name": "Yellow Bright - Reset",
       "scope": [
         "entity.name.tag",
         "keyword.operator.expression",
@@ -720,7 +725,14 @@
         "keyword.other.unit",
         "keyword.other.unit.percentage",
         "keyword.control.conditional.zig",
-        "keyword.storage.zig"
+        "keyword.storage.zig",
+        "keyword.control.shell",
+        "storage.modifier.c",
+        "keyword.control.directive.pragma.cpp",
+        "storage.modifier.specifier.const.cpp",
+        "keyword.control.c",
+        "keyword.control.directive.conditional.c",
+        "keyword.control.directive.else.cpp"
       ],
       "settings": {
         "foreground": "#FDE8AA",
@@ -728,7 +740,7 @@
       }
     },
     {
-      "name": "Tan (Reset)",
+      "name": "Tan - Reset",
       "scope": [
         "variable.parameter.function.language.python",
         "meta.function-call.arguments.python"
@@ -739,10 +751,9 @@
       }
     },
     {
-      "name": "Teal (Passthrough)",
+      "name": "Teal - Passthrough",
       "scope": [
         "variable.other.assignment.go",
-        "variable.other.assignment.shell",
         "variable.other.assignment",
         "meta.class.inheritance.python",
         "meta.function.python",
@@ -751,20 +762,20 @@
         "keyword.control.trycatch.ts",
         "entity.name.tag.wildcard.scss",
         "meta.block.ts",
-        "entity.other.attribute-name.class"
+        "entity.other.attribute-name.class",
+        "storage.type.built-in.primitive.c"
       ],
       "settings": {
         "foreground": "#3BF7B8"
       }
     },
     {
-      "name": "Teal (Bold)",
+      "name": "Teal - Bold",
       "scope": [
         "meta.macro.metavariable.rust",
         "meta.macro.rust",
         "entity.name.type.result",
         "entity.name.package.go",
-        "keyword.operator.math.rust",
         "keyword.operator.subpattern",
         "keyword.operator.question",
         "keyword.operator.address.go",
@@ -772,7 +783,9 @@
         "keyword.control.flow.block-scalar.literal.yaml",
         "punctuation.definition.keyword.scss",
         "keyword.control.directive.include.cpp",
-        "keyword.control.directive.include.c"
+        "keyword.control.directive.include.c",
+        "keyword.constant.default.zig",
+        "keyword.constant.bool.zig"
       ],
       "settings": {
         "foreground": "#3BF7B8",
@@ -780,7 +793,7 @@
       }
     },
     {
-      "name": "Teal (Reset)",
+      "name": "Teal - Reset",
       "scope": [
         "support.type.primitive.ts",
         "keyword.control.asm",
@@ -794,7 +807,7 @@
       }
     },
     {
-      "name": "Teal Bright (Reset)",
+      "name": "Teal Bright - Reset",
       "scope": ["variable.other.enummember"],
       "settings": {
         "foreground": "#A3F5D4",
@@ -802,7 +815,7 @@
       }
     },
     {
-      "name": "Cyan Bright (Bold)",
+      "name": "Cyan Bright - Bold",
       "scope": ["punctuation.definition.keyword.scss"],
       "settings": {
         "foreground": "#A2F3F6",
@@ -810,7 +823,7 @@
       }
     },
     {
-      "name": "Cyan Bright (Reset)",
+      "name": "Cyan Bright - Reset",
       "scope": [
         "constant.numeric.json",
         "constant.numeric.json.comments",
@@ -835,7 +848,7 @@
       }
     },
     {
-      "name": "Blue (Passthrough)",
+      "name": "Blue - Passthrough",
       "scope": [
         "support.class",
         "punctuation.definition.range.diff",
@@ -850,7 +863,7 @@
       }
     },
     {
-      "name": "Blue (Bold)",
+      "name": "Blue - Bold",
       "scope": [
         "entity.name.type.class.python",
         "meta.indexed-name.python",
@@ -865,7 +878,7 @@
       }
     },
     {
-      "name": "Blue (Reset)",
+      "name": "Blue - Reset",
       "scope": [
         "entity.name.command.shell",
         "punctuation.definition.variable.powershell"
@@ -876,7 +889,7 @@
       }
     },
     {
-      "name": "Blue Bright (Passthrough)",
+      "name": "Blue Bright - Passthrough",
       "scope": [
         "custom.punctuation.section.insertion.bracket",
         "variable.other.metavariable.name.rust"
@@ -886,7 +899,7 @@
       }
     },
     {
-      "name": "Cyan (Passthrough)",
+      "name": "Cyan - Passthrough",
       "scope": [
         "constant.character.escape",
         "constant.character.escape.go",
@@ -912,7 +925,7 @@
       }
     },
     {
-      "name": "Cyan (Bold)",
+      "name": "Cyan - Bold",
       "scope": [
         "entity.name.type.class.ts",
         "variable.parameter.label.asm",
@@ -924,7 +937,17 @@
       }
     },
     {
-      "name": "Orange (Passthrough)",
+      "name": "Cyan Dark - Passthrough",
+      "scope": [
+        "punctuation.definition.interpolation.rust",
+        "string.interpolated.dollar.shell"
+      ],
+      "settings": {
+        "foreground": "#3BE7F7"
+      }
+    },
+    {
+      "name": "Orange - Passthrough",
       "scope": [
         "punctuation.definition.block.sequence.item.yaml",
         "support.type.map.key.scss",
@@ -936,7 +959,7 @@
       }
     },
     {
-      "name": "Orange (Reset)",
+      "name": "Orange - Reset",
       "scope": [
         "entity.name.field",
         "entity.name.record.field",
@@ -966,15 +989,15 @@
       }
     },
     {
-      "name": "Orange (Bold)",
-      "scope": ["meta.parameter-expansion"],
+      "name": "Orange - Bold",
+      "scope": ["meta.parameter-expansion", "variable.parameter.preprocessor.c"],
       "settings": {
         "foreground": "#FBA94B",
         "fontStyle": "bold"
       }
     },
     {
-      "name": "Orange Bright (Bold Underline)",
+      "name": "Orange Bright - Bold Underline",
       "scope": ["support.type.property-name.table.toml"],
       "settings": {
         "foreground": "#FFCA7A",
@@ -982,12 +1005,16 @@
       }
     },
     {
-      "name": "Orange Bright (Bold)",
+      "name": "Orange Bright - Bold",
       "scope": [
         "variable.other.assignment.shell",
         "keyword.operator.borrow.and.rust",
         "keyword.operator.assignment.equal.rust",
-        "keyword.operator.bitwise.zig"
+        "keyword.operator.math.rust",
+        "keyword.operator.comparison.rust",
+        "keyword.operator.bitwise.zig",
+        "storage.modifier.pointer.cpp",
+        "punctuation.definition.function.pointer.dereference.cpp"
       ],
       "settings": {
         "foreground": "#FFCA7A",
@@ -995,7 +1022,7 @@
       }
     },
     {
-      "name": "Orange Bright (Reset)",
+      "name": "Orange Bright - Reset",
       "scope": [
         "entity.name.tag.toml",
         "entity.name.tag.yaml",
@@ -1004,6 +1031,8 @@
         "meta.field.declaration.ts",
         "variable.object.property.ts",
         "variable.other.go",
+        "punctuation.separator.pointer-access.c",
+        "keyword.operator.c",
         "keyword.operator.arithmetic.rust",
         "keyword.operator.arrow.fat.rust",
         "keyword.operator.arrow.skinny.rust",
@@ -1016,7 +1045,7 @@
       }
     },
     {
-      "name": "Foreground (Reset)",
+      "name": "Foreground - Reset",
       "scope": [
         "entity.name.function.macro",
         "entity.name.macro",
@@ -1039,7 +1068,7 @@
       }
     },
     {
-      "name": "Green (Passthrough)",
+      "name": "Green - Passthrough",
       "scope": [
         "string.quoted.triple.basic.block.toml",
         "keyword.operator.address.go",
@@ -1055,7 +1084,7 @@
       }
     },
     {
-      "name": "Green (Reset)",
+      "name": "Green - Reset",
       "scope": [
         "storage.modifier.lifetime.rust",
         "entity.name.lifetime.rust",
@@ -1071,10 +1100,12 @@
         "string.quoted.double.rust",
         "string.quoted.double.yaml",
         "string.quoted.double.json",
-        "string.quoted.single.basic.line.toml",
         "string.quoted.double.json.comments",
         "string.quoted.double.go",
+        "string.quoted.other.lt-gt.include.cpp",
+        "string.quoted.single.basic.line.toml",
         "string.multiline.zig",
+        "variable.other.object.declare.cpp",
         "variable.string.zig"
       ],
       "settings": {
@@ -1083,7 +1114,7 @@
       }
     },
     {
-      "name": "Green Bright (Bold)",
+      "name": "Green Bright - Bold",
       "scope": [
         "constant.other.caps.go",
         "variable.other.constant.property.ts",
@@ -1097,15 +1128,20 @@
       }
     },
     {
-      "name": "Green Bright (Underline)",
-      "scope": "support.function.builtin.zig",
+      "name": "Green Bright - Underline",
+      "scope": [
+        "entity.name.function.preprocessor.c",
+        "entity.name.function.preprocessor.cpp",
+        "support.function.builtin.zig",
+        "entity.name.function.macro.rust"
+      ],
       "settings": {
         "foreground": "#ABF282",
         "fontStyle": "underline"
       }
     },
     {
-      "name": "Green Bright (Passthrough)",
+      "name": "Green Bright - Passthrough",
       "scope": [
         "constant.other.caps.rust",
         "variable.other.constant.rust",
@@ -1116,14 +1152,14 @@
       }
     },
     {
-      "name": "Red (Passthrough)",
+      "name": "Red - Passthrough",
       "scope": ["invalid.illegal.line-too-long.git-commit"],
       "settings": {
         "foreground": "#FC8DA8"
       }
     },
     {
-      "name": "Pink (Passthrough)",
+      "name": "Pink - Passthrough",
       "scope": [
         "string.unquoted.argument.shell",
         "entity.other.inherited-class.python"
@@ -1133,7 +1169,7 @@
       }
     },
     {
-      "name": "Pink (Reset)",
+      "name": "Pink - Reset",
       "scope": [
         "entity.name.type.primitive.rust",
         "punctuation.definition.attribute.rust",
@@ -1141,7 +1177,9 @@
         "entity.name.type.numeric.rust",
         "constant.language.boolean.ts",
         "constant.language.null.ts",
-        "constant.language.undefined.ts"
+        "constant.language.undefined.ts",
+        "punctuation.definition.directive.cpp",
+        "punctuation.definition.directive.c"
       ],
       "settings": {
         "foreground": "#FEB4D8",
@@ -1149,7 +1187,7 @@
       }
     },
     {
-      "name": "Pink (Bold)",
+      "name": "Pink - Bold",
       "scope": [
         "support.type.register",
         "punctuation.definition.attribute.rust",
@@ -1162,7 +1200,7 @@
       }
     },
     {
-      "name": "Pink Bright (Passthrough)",
+      "name": "Pink Bright - Passthrough",
       "scope": [
         "entity.name.type.trait.rust",
         "variable.other.normal.shell",
@@ -1173,14 +1211,14 @@
       }
     },
     {
-      "name": "Purple Bright (Passthrough)",
+      "name": "Purple Bright - Passthrough",
       "scope": ["entity.other.attribute-name.pseudo-element.css"],
       "settings": {
         "foreground": "#E0B4FE"
       }
     },
     {
-      "name": "Pink Bright (Reset)",
+      "name": "Pink Bright - Reset",
       "scope": ["support.function.go"],
       "settings": {
         "foreground": "#FECDEE",
@@ -1188,7 +1226,7 @@
       }
     },
     {
-      "name": "Purple Bright (Reset)",
+      "name": "Purple Bright - Reset",
       "scope": [
         "punctuation.definition.markdown",
         "punctuation.definition.heading.markdown",
@@ -1242,9 +1280,7 @@
         "entity.name.type.numeric",
         "keyword.control.import.ts",
         "custom.variable.other.normal.numeric",
-        "punctuation.definition.directive.c",
         "keyword.control.async.zig",
-        "keyword.constant.default.zig",
         "keyword.type.integer.zig",
         "keyword.control.rust",
         "keyword.control.flow.zig",
@@ -1256,7 +1292,7 @@
       }
     },
     {
-      "name": "Purple Bright (Bold)",
+      "name": "Purple Bright - Bold",
       "scope": [
         "magit.header",
         "constant.language.bool",
@@ -1267,8 +1303,7 @@
         "constant.language.boolean.yaml",
         "constant.language.boolean",
         "constant.language.json",
-        "constant.language.boolean",
-        "keyword.constant.bool.zig"
+        "constant.language.boolean"
       ],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1276,7 +1311,7 @@
       }
     },
     {
-      "name": "Purple (Bold)",
+      "name": "Purple - Bold",
       "scope": [
         "punctuation.definition.attribute",
         "keyword.control.default.ts",
@@ -1289,7 +1324,7 @@
       }
     },
     {
-      "name": "Purple Bright (Underline)",
+      "name": "Purple Bright - Underline",
       "scope": ["entity.name.function.macro.rust"],
       "settings": {
         "foreground": "#E0B4FE",
@@ -1297,7 +1332,7 @@
       }
     },
     {
-      "name": "Purple (Reset)",
+      "name": "Purple - Reset",
       "scope": [
         "punctuation.definition.from-file.diff",
         "punctuation.definition.to-file.diff"
@@ -1308,7 +1343,7 @@
       }
     },
     {
-      "name": "Black (Normal Italic)",
+      "name": "Black - Italic",
       "scope": [
         "comment",
         "comment.block",
@@ -1324,7 +1359,7 @@
       }
     },
     {
-      "name": "Bright Black (Reset)",
+      "name": "Bright Black - Reset",
       "scope": [
         "comment.line.documentation",
         "comment.block.documentation",
@@ -1336,14 +1371,14 @@
       }
     },
     {
-      "name": "Black Bright (Passthrough)",
+      "name": "Black Bright - Passthrough",
       "scope": ["punctuation.brackets.angle.rust"],
       "settings": {
         "foreground": "#B3BDC7"
       }
     },
     {
-      "name": "Black (Reset)",
+      "name": "Black - Reset",
       "scope": [
         "entity.name.function.decorator",
         "punctuation.brackets.attribute",
@@ -1367,7 +1402,7 @@
       }
     },
     {
-      "name": "Black (Bold)",
+      "name": "Black - Bold",
       "scope": [
         "keyword.operator.namespace",
         "keyword.operator.namespace.rust",
@@ -1379,7 +1414,7 @@
       }
     },
     {
-      "name": "White Bright (Bold)",
+      "name": "White Bright - Bold",
       "scope": [
         "meta.diff.header.to-file",
         "meta.diff.header.from-file",
@@ -1393,7 +1428,23 @@
       }
     },
     {
-      "name": "Unsafe (Underline)",
+      "name": "White Bright - Reset",
+      "scope": ["variable.parameter.cpp"],
+      "settings": {
+        "foreground": "#F2F1EE",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Extern keyword / exported symbols",
+      "scope": ["storage.modifier.specifier.extern.cpp"],
+      "settings": {
+        "foreground": "#FD7C68",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Unsafe - Underline",
       "scope": ["keyword.other.unsafe"],
       "settings": {
         "foreground": "#FD7C68",
@@ -1401,14 +1452,14 @@
       }
     },
     {
-      "name": "Unsafe (Passthrough)",
+      "name": "Unsafe - Passthrough",
       "scope": ["meta.function-call.unsafe"],
       "settings": {
         "foreground": "#FD7C68"
       }
     },
     {
-      "name": "White (Bold)",
+      "name": "White - Bold",
       "scope": [
         "punctuation.semi.rust",
         "punctuation.separator.dictionary.pair.json.comments",
@@ -1421,7 +1472,7 @@
       }
     },
     {
-      "name": "White (Reset)",
+      "name": "White - Reset",
       "scope": [
         "entity.other.attribute-name.class",
         "entity.other.attribute-name.id",
@@ -1436,7 +1487,7 @@
       }
     },
     {
-      "name": "Transparent (Reset)",
+      "name": "Transparent - Reset",
       "scope": [
         "variable.other.rust",
         "meta.method.declaration.ts",
@@ -1460,14 +1511,14 @@
       }
     },
     {
-      "name": "Transparent (Italic)",
+      "name": "Transparent - Italic",
       "scope": ["markup.italic"],
       "settings": {
         "fontStyle": ""
       }
     },
     {
-      "name": "Transparent (Bold)",
+      "name": "Transparent - Bold",
       "scope": [
         "markup.bold",
         "markup.heading",
@@ -1480,7 +1531,7 @@
       }
     },
     {
-      "name": "Transparent (Underline)",
+      "name": "Transparent - Underline",
       "scope": ["meta.mutable"],
       "settings": {
         "fontStyle": "underline"
@@ -1501,6 +1552,7 @@
       "fontStyle": ""
     },
     "keywordLiteral": {
+      "foreground": "#F39B68",
       "bold": false
     },
     "type": {
@@ -1525,7 +1577,7 @@
       "underline": true
     },
     "generic.macro": {
-      "foreground": "#8BCEFD"
+      "foreground": "#A2F3F6"
     },
     "generic.injected": {
       "foreground": "#D8D2C0"
@@ -1870,7 +1922,7 @@
       "bold": true
     },
     "type.declaration": {
-      "foreground": "#C2E5FA",
+      "foreground": "#FEB4D8",
       "bold": true
     },
     "typeParameter": {
@@ -1933,16 +1985,20 @@
       "bold": true
     },
     "macro": {
-      "foreground": "#E0B4FE",
-      "underline": true
+      "foreground": "#ABF282",
+      "fontStyle": "underline"
     },
     "macro.injected": {
-      "foreground": "#E0B4FE",
-      "underline": true
+      "foreground": "#ABF282",
+      "fontStyle": "underline"
     },
     "macro.unsafe": {
-      "foreground": "#E0B4FE",
+      "foreground": "#ABF282",
       "underline": true
+    },
+    "macroBang": {
+      "foreground": "#ABF282",
+      "fontStyle": "bold underline"
     },
     "lifetime": {
       "foreground": "#A3C95D",
@@ -1969,7 +2025,7 @@
     },
     "operator": {
       "foreground": "#FFCA7A",
-      "bold": false
+      "bold": true
     },
     "operator.injected": {
       "foreground": "#8F99A3",
