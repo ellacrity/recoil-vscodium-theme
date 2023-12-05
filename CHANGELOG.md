@@ -18,6 +18,22 @@ not a top priority. With that said, I will try my best to keep it as up-to-date 
 
 - Theme is now modified with a CLI tool to make it easier to insert new entries, make modifications, and more without having to worry about breaking the color palette.
 
+## [0.7.4] - 2023-12-04
+
+### Added
+
+- Improved support for Python, JavaScript and TypeScript/TSX. There should be fewer uncolored tokens now.
+  - If you find uncolored tokens, please open an issue if you would like them to be fixed
+
+### Changed
+
+- Modified variable and parameter tokens to be tan rather than blue hue to be more consistent with the rest of the theme.
+- **Slight tweaks** were made to the overall color palette, which should result in tokens standing out a bit more, improving legibility.
+
+### Fixed
+
+- Invalid / illegal tokens should now be fixed. They were appearing as bold, bright white, which was quite jarring to look at. Instead, they are now the default foreground color but the red squiggle remains.
+
 ## [0.7.3] - 2023-11-28
 
 This release comprises a set of changes that have been pending for quite a while. I have not had the
